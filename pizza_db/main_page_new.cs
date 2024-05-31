@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pizza_db
 {
-    public partial class Form_test : Form
+    public partial class main_page_new : Form
     {
-        public Form_test()
+        public main_page_new()
         {
             InitializeComponent();
         }

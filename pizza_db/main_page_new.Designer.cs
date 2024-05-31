@@ -1,6 +1,6 @@
 ﻿namespace pizza_db
 {
-    partial class Form_test
+    partial class main_page_new
     {
         /// <summary>
         /// Required designer variable.
