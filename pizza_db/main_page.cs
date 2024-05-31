@@ -29,7 +29,7 @@ namespace pizza_db
         private void label_username_Click(object sender, EventArgs e)
         {
         }
-
+        public static String name;
         private void main_page_Load(object sender, EventArgs e)
         {
             con.Open();
@@ -37,7 +37,7 @@ namespace pizza_db
             var u_id = first_page.uid;
             comm.Parameters.AddWithValue("@uid", u_id);
             comm.CommandText = "SELECT username from pizza_proj.customer where customer_id = @uid";
-            string name = Convert.ToString(comm.ExecuteScalar());
+            name = Convert.ToString(comm.ExecuteScalar());
 
             label_username.Text = "Username : " + name;
 
@@ -45,6 +45,7 @@ namespace pizza_db
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            clear_data();
             this.Hide();
             first_page fp = new first_page();
             fp.ShowDialog();
@@ -57,6 +58,10 @@ namespace pizza_db
             edit_info ed = new edit_info();
             ed.ShowDialog();
             this.Close();
+        }
+
+        void clear_data() {
+            name = "";
         }
     }
 }

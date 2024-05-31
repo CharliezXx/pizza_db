@@ -78,14 +78,22 @@ namespace pizza_db
             if (String.IsNullOrEmpty(textBox_name_firstpage.Text) || String.IsNullOrEmpty(textBox_password_firstpage.Text))
             {
                 error_first_page.Visible = true;
-            } else if (textBox_name_firstpage.Text != name || textBox_password_firstpage.Text !=pass || pass != conpass) 
-            {
-                MessageBox.Show("Wrong password User ID = "+Convert.ToString(uid) ); //เช็คค่าเฉยๆ
-                error_first_page.Visible = true;
             }
+            else if (textBox_name_firstpage.Text == "admin" && textBox_password_firstpage.Text == "admin")
+            {
+                this.Hide();
+                order_admin o = new order_admin();
+                o.ShowDialog();
+                this.Close();
+            }
+            else if (textBox_name_firstpage.Text != name || textBox_password_firstpage.Text != pass || pass != conpass)
+            {
+                MessageBox.Show("Wrong password User ID = " + Convert.ToString(uid)); //เช็คค่าเฉยๆ
+                error_first_page.Visible = true;
+            } 
             else if (textBox_name_firstpage.Text == name && textBox_password_firstpage.Text == pass)
             {
-                MessageBox.Show("Correct password User ID = "+Convert.ToString(uid));
+                MessageBox.Show("Correct password User ID = " + Convert.ToString(uid));
                 this.Hide();
                 main_page m = new main_page();
                 m.ShowDialog();
