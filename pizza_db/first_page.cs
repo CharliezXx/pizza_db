@@ -93,7 +93,7 @@ namespace pizza_db
             } 
             else if (textBox_name_firstpage.Text == name && textBox_password_firstpage.Text == pass)
             {
-                MessageBox.Show("Correct password User ID = " + Convert.ToString(uid));
+                //MessageBox.Show("Correct password User ID = " + Convert.ToString(uid));
                 this.Hide();
                 main_page m = new main_page();
                 m.ShowDialog();
