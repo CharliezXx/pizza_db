@@ -73,9 +73,69 @@ namespace pizza_db.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pepsi_1_L_ {
+            get {
+                object obj = ResourceManager.GetObject("pepsi 1 L.", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pepsi_410_ml_ {
+            get {
+                object obj = ResourceManager.GetObject("pepsi 410 ml.", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pepsi_can_245_ml_ {
+            get {
+                object obj = ResourceManager.GetObject("Pepsi can 245 ml.", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spagety {
+            get {
+                object obj = ResourceManager.GetObject("spagety", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap เฟรนฟราย {
             get {
                 object obj = ResourceManager.GetObject("เฟรนฟราย", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ไก่ทอดนิวออลีน {
+            get {
+                object obj = ResourceManager.GetObject("ไก่ทอดนิวออลีน", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap น้ำทิพย์_550_มล_ {
+            get {
+                object obj = ResourceManager.GetObject("น้ำทิพย์ 550 มล.", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +236,16 @@ namespace pizza_db.Properties {
         internal static System.Drawing.Bitmap พิซซ่าหน้าฮาวายเอี้ยน__Pizza_Hawaiian_ {
             get {
                 object obj = ResourceManager.GetObject("พิซซ่าหน้าฮาวายเอี้ยน (Pizza Hawaiian)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap สลัดผักสไตล์ไอแอมพิซซ่า {
+            get {
+                object obj = ResourceManager.GetObject("สลัดผักสไตล์ไอแอมพิซซ่า", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

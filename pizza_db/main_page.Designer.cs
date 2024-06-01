@@ -33,14 +33,39 @@
             button_edit_address = new Button();
             button_get_bill = new Button();
             panel1 = new Panel();
+            numericUpDown16 = new NumericUpDown();
+            textBox14 = new TextBox();
+            menu16 = new TextBox();
+            pictureBox16 = new PictureBox();
+            numericUpDown15 = new NumericUpDown();
+            textBox13 = new TextBox();
+            menu15 = new TextBox();
+            pictureBox15 = new PictureBox();
+            numericUpDown14 = new NumericUpDown();
+            textBox11 = new TextBox();
+            menu14 = new TextBox();
+            pictureBox14 = new PictureBox();
+            numericUpDown13 = new NumericUpDown();
+            textBox9 = new TextBox();
+            menu13 = new TextBox();
+            pictureBox13 = new PictureBox();
+            numericUpDown12 = new NumericUpDown();
+            textBox7 = new TextBox();
+            menu12 = new TextBox();
+            pictureBox12 = new PictureBox();
+            size11 = new ComboBox();
             size10 = new ComboBox();
             numericUpDown10 = new NumericUpDown();
+            numericUpDown11 = new NumericUpDown();
             textBox4 = new TextBox();
             menu10 = new TextBox();
+            textBox6 = new TextBox();
             pictureBox10 = new PictureBox();
             size9 = new ComboBox();
+            menu11 = new TextBox();
             numericUpDown9 = new NumericUpDown();
             textBox3 = new TextBox();
+            pictureBox11 = new PictureBox();
             menu9 = new TextBox();
             pictureBox9 = new PictureBox();
             size8 = new ComboBox();
@@ -84,15 +109,30 @@
             menu1 = new TextBox();
             pictureBox1 = new PictureBox();
             textBox10 = new TextBox();
-            size11 = new ComboBox();
-            numericUpDown11 = new NumericUpDown();
-            textBox6 = new TextBox();
-            menu11 = new TextBox();
-            pictureBox11 = new PictureBox();
+            numericUpDown17 = new NumericUpDown();
+            textBox16 = new TextBox();
+            menu17 = new TextBox();
+            pictureBox17 = new PictureBox();
+            numericUpDown18 = new NumericUpDown();
+            textBox19 = new TextBox();
+            menu18 = new TextBox();
+            pictureBox18 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown16).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -110,8 +150,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown17).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown18).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             SuspendLayout();
             // 
             // label_username
@@ -119,7 +161,7 @@
             label_username.AutoSize = true;
             label_username.Font = new Font("Tahoma", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_username.ForeColor = SystemColors.ButtonHighlight;
-            label_username.Location = new Point(30, 14);
+            label_username.Location = new Point(28, 14);
             label_username.Name = "label_username";
             label_username.Size = new Size(179, 39);
             label_username.TabIndex = 2;
@@ -166,6 +208,34 @@
             panel1.AutoScroll = true;
             panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panel1.BackColor = Color.FromArgb(255, 255, 192);
+            panel1.Controls.Add(numericUpDown18);
+            panel1.Controls.Add(textBox19);
+            panel1.Controls.Add(menu18);
+            panel1.Controls.Add(pictureBox18);
+            panel1.Controls.Add(numericUpDown17);
+            panel1.Controls.Add(textBox16);
+            panel1.Controls.Add(menu17);
+            panel1.Controls.Add(pictureBox17);
+            panel1.Controls.Add(numericUpDown16);
+            panel1.Controls.Add(textBox14);
+            panel1.Controls.Add(menu16);
+            panel1.Controls.Add(pictureBox16);
+            panel1.Controls.Add(numericUpDown15);
+            panel1.Controls.Add(textBox13);
+            panel1.Controls.Add(menu15);
+            panel1.Controls.Add(pictureBox15);
+            panel1.Controls.Add(numericUpDown14);
+            panel1.Controls.Add(textBox11);
+            panel1.Controls.Add(menu14);
+            panel1.Controls.Add(pictureBox14);
+            panel1.Controls.Add(numericUpDown13);
+            panel1.Controls.Add(textBox9);
+            panel1.Controls.Add(menu13);
+            panel1.Controls.Add(pictureBox13);
+            panel1.Controls.Add(numericUpDown12);
+            panel1.Controls.Add(textBox7);
+            panel1.Controls.Add(menu12);
+            panel1.Controls.Add(pictureBox12);
             panel1.Controls.Add(size11);
             panel1.Controls.Add(size10);
             panel1.Controls.Add(numericUpDown10);
@@ -227,6 +297,192 @@
             panel1.TabIndex = 100;
             panel1.Paint += panel1_Paint;
             // 
+            // numericUpDown16
+            // 
+            numericUpDown16.Location = new Point(742, 2969);
+            numericUpDown16.Name = "numericUpDown16";
+            numericUpDown16.Size = new Size(82, 23);
+            numericUpDown16.TabIndex = 184;
+            // 
+            // textBox14
+            // 
+            textBox14.Location = new Point(838, 2968);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(100, 23);
+            textBox14.TabIndex = 183;
+            textBox14.Text = "PRICE";
+            textBox14.TextAlign = HorizontalAlignment.Center;
+            // 
+            // menu16
+            // 
+            menu16.Location = new Point(610, 2940);
+            menu16.Name = "menu16";
+            menu16.Size = new Size(354, 23);
+            menu16.TabIndex = 182;
+            menu16.Text = "New Orleans Fried Chicken";
+            menu16.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox16
+            // 
+            pictureBox16.Image = Properties.Resources.ไก่ทอดนิวออลีน;
+            pictureBox16.Location = new Point(632, 2624);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(310, 310);
+            pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox16.TabIndex = 181;
+            pictureBox16.TabStop = false;
+            // 
+            // numericUpDown15
+            // 
+            numericUpDown15.Location = new Point(216, 2971);
+            numericUpDown15.Name = "numericUpDown15";
+            numericUpDown15.Size = new Size(82, 23);
+            numericUpDown15.TabIndex = 180;
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(312, 2970);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(100, 23);
+            textBox13.TabIndex = 179;
+            textBox13.Text = "PRICE";
+            textBox13.TextAlign = HorizontalAlignment.Center;
+            // 
+            // menu15
+            // 
+            menu15.Location = new Point(84, 2942);
+            menu15.Name = "menu15";
+            menu15.Size = new Size(354, 23);
+            menu15.TabIndex = 178;
+            menu15.Text = "Spaghetti";
+            menu15.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox15
+            // 
+            pictureBox15.Image = Properties.Resources.spagety;
+            pictureBox15.Location = new Point(106, 2626);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(310, 310);
+            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox15.TabIndex = 177;
+            pictureBox15.TabStop = false;
+            // 
+            // numericUpDown14
+            // 
+            numericUpDown14.Location = new Point(742, 2596);
+            numericUpDown14.Name = "numericUpDown14";
+            numericUpDown14.Size = new Size(82, 23);
+            numericUpDown14.TabIndex = 176;
+            // 
+            // textBox11
+            // 
+            textBox11.Location = new Point(838, 2595);
+            textBox11.Name = "textBox11";
+            textBox11.Size = new Size(100, 23);
+            textBox11.TabIndex = 175;
+            textBox11.Text = "PRICE";
+            textBox11.TextAlign = HorizontalAlignment.Center;
+            // 
+            // menu14
+            // 
+            menu14.Location = new Point(610, 2567);
+            menu14.Name = "menu14";
+            menu14.Size = new Size(354, 23);
+            menu14.TabIndex = 174;
+            menu14.Text = "Pepsi can 245 ml";
+            menu14.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Image = Properties.Resources.Pepsi_can_245_ml_;
+            pictureBox14.Location = new Point(632, 2251);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(310, 310);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 173;
+            pictureBox14.TabStop = false;
+            // 
+            // numericUpDown13
+            // 
+            numericUpDown13.Location = new Point(216, 2598);
+            numericUpDown13.Name = "numericUpDown13";
+            numericUpDown13.Size = new Size(82, 23);
+            numericUpDown13.TabIndex = 172;
+            // 
+            // textBox9
+            // 
+            textBox9.Location = new Point(312, 2597);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(100, 23);
+            textBox9.TabIndex = 171;
+            textBox9.Text = "PRICE";
+            textBox9.TextAlign = HorizontalAlignment.Center;
+            // 
+            // menu13
+            // 
+            menu13.Location = new Point(84, 2569);
+            menu13.Name = "menu13";
+            menu13.Size = new Size(354, 23);
+            menu13.TabIndex = 170;
+            menu13.Text = "pepsi 410 ml";
+            menu13.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Image = Properties.Resources.pepsi_410_ml_;
+            pictureBox13.Location = new Point(106, 2253);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(310, 310);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 169;
+            pictureBox13.TabStop = false;
+            // 
+            // numericUpDown12
+            // 
+            numericUpDown12.Location = new Point(742, 2223);
+            numericUpDown12.Name = "numericUpDown12";
+            numericUpDown12.Size = new Size(82, 23);
+            numericUpDown12.TabIndex = 168;
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(838, 2222);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(100, 23);
+            textBox7.TabIndex = 167;
+            textBox7.Text = "PRICE";
+            textBox7.TextAlign = HorizontalAlignment.Center;
+            // 
+            // menu12
+            // 
+            menu12.Location = new Point(610, 2194);
+            menu12.Name = "menu12";
+            menu12.Size = new Size(354, 23);
+            menu12.TabIndex = 166;
+            menu12.Text = "pepsi 1 L";
+            menu12.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = Properties.Resources.pepsi_1_L_;
+            pictureBox12.Location = new Point(632, 1878);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(310, 310);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 165;
+            pictureBox12.TabStop = false;
+            // 
+            // size11
+            // 
+            size11.AllowDrop = true;
+            size11.FormattingEnabled = true;
+            size11.Items.AddRange(new object[] { "S", "M", "L" });
+            size11.Location = new Point(89, 2224);
+            size11.Name = "size11";
+            size11.Size = new Size(121, 23);
+            size11.TabIndex = 164;
+            size11.Text = "Size";
+            // 
             // size10
             // 
             size10.AllowDrop = true;
@@ -245,6 +501,13 @@
             numericUpDown10.Size = new Size(82, 23);
             numericUpDown10.TabIndex = 158;
             // 
+            // numericUpDown11
+            // 
+            numericUpDown11.Location = new Point(216, 2224);
+            numericUpDown11.Name = "numericUpDown11";
+            numericUpDown11.Size = new Size(82, 23);
+            numericUpDown11.TabIndex = 163;
+            // 
             // textBox4
             // 
             textBox4.Location = new Point(838, 1849);
@@ -262,6 +525,15 @@
             menu10.TabIndex = 156;
             menu10.Text = "Pizza Spinach Cheese";
             menu10.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(312, 2223);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(100, 23);
+            textBox6.TabIndex = 162;
+            textBox6.Text = "PRICE";
+            textBox6.TextAlign = HorizontalAlignment.Center;
             // 
             // pictureBox10
             // 
@@ -284,6 +556,16 @@
             size9.TabIndex = 154;
             size9.Text = "Size";
             // 
+            // menu11
+            // 
+            menu11.Location = new Point(84, 2195);
+            menu11.Name = "menu11";
+            menu11.Size = new Size(354, 23);
+            menu11.TabIndex = 161;
+            menu11.Text = "French Fries";
+            menu11.TextAlign = HorizontalAlignment.Center;
+            menu11.TextChanged += textBox7_TextChanged;
+            // 
             // numericUpDown9
             // 
             numericUpDown9.Location = new Point(220, 1851);
@@ -299,6 +581,16 @@
             textBox3.TabIndex = 152;
             textBox3.Text = "PRICE";
             textBox3.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = Properties.Resources.เฟรนฟราย;
+            pictureBox11.Location = new Point(106, 1879);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(310, 310);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 160;
+            pictureBox11.TabStop = false;
             // 
             // menu9
             // 
@@ -709,52 +1001,75 @@
             textBox10.TextAlign = HorizontalAlignment.Center;
             textBox10.TextChanged += textBox10_TextChanged;
             // 
-            // size11
+            // numericUpDown17
             // 
-            size11.AllowDrop = true;
-            size11.FormattingEnabled = true;
-            size11.Items.AddRange(new object[] { "S", "M", "L" });
-            size11.Location = new Point(89, 2224);
-            size11.Name = "size11";
-            size11.Size = new Size(121, 23);
-            size11.TabIndex = 164;
-            size11.Text = "Size";
+            numericUpDown17.Location = new Point(212, 3345);
+            numericUpDown17.Name = "numericUpDown17";
+            numericUpDown17.Size = new Size(82, 23);
+            numericUpDown17.TabIndex = 188;
             // 
-            // numericUpDown11
+            // textBox16
             // 
-            numericUpDown11.Location = new Point(216, 2224);
-            numericUpDown11.Name = "numericUpDown11";
-            numericUpDown11.Size = new Size(82, 23);
-            numericUpDown11.TabIndex = 163;
+            textBox16.Location = new Point(308, 3344);
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(100, 23);
+            textBox16.TabIndex = 187;
+            textBox16.Text = "PRICE";
+            textBox16.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox6
+            // menu17
             // 
-            textBox6.Location = new Point(312, 2223);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 162;
-            textBox6.Text = "PRICE";
-            textBox6.TextAlign = HorizontalAlignment.Center;
+            menu17.Location = new Point(80, 3316);
+            menu17.Name = "menu17";
+            menu17.Size = new Size(354, 23);
+            menu17.TabIndex = 186;
+            menu17.Text = "Vegetable salad";
+            menu17.TextAlign = HorizontalAlignment.Center;
             // 
-            // menu11
+            // pictureBox17
             // 
-            menu11.Location = new Point(84, 2195);
-            menu11.Name = "menu11";
-            menu11.Size = new Size(354, 23);
-            menu11.TabIndex = 161;
-            menu11.Text = "French Fries";
-            menu11.TextAlign = HorizontalAlignment.Center;
-            menu11.TextChanged += textBox7_TextChanged;
+            pictureBox17.Image = Properties.Resources.สลัดผักสไตล์ไอแอมพิซซ่า;
+            pictureBox17.Location = new Point(102, 3000);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(310, 310);
+            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox17.TabIndex = 185;
+            pictureBox17.TabStop = false;
             // 
-            // pictureBox11
+            // numericUpDown18
             // 
-            pictureBox11.Image = Properties.Resources.เฟรนฟราย;
-            pictureBox11.Location = new Point(106, 1879);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(310, 310);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 160;
-            pictureBox11.TabStop = false;
+            numericUpDown18.Location = new Point(742, 3345);
+            numericUpDown18.Name = "numericUpDown18";
+            numericUpDown18.Size = new Size(82, 23);
+            numericUpDown18.TabIndex = 192;
+            // 
+            // textBox19
+            // 
+            textBox19.Location = new Point(838, 3344);
+            textBox19.Name = "textBox19";
+            textBox19.Size = new Size(100, 23);
+            textBox19.TabIndex = 191;
+            textBox19.Text = "PRICE";
+            textBox19.TextAlign = HorizontalAlignment.Center;
+            // 
+            // menu18
+            // 
+            menu18.Location = new Point(610, 3316);
+            menu18.Name = "menu18";
+            menu18.Size = new Size(354, 23);
+            menu18.TabIndex = 190;
+            menu18.Text = "Water";
+            menu18.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.Image = Properties.Resources.น้ำทิพย์_550_มล_;
+            pictureBox18.Location = new Point(632, 3000);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(310, 310);
+            pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox18.TabIndex = 189;
+            pictureBox18.TabStop = false;
             // 
             // main_page
             // 
@@ -777,9 +1092,21 @@
             Load += main_page_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown16).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
@@ -797,8 +1124,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown17).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown18).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -865,5 +1194,33 @@
         private TextBox textBox6;
         private TextBox menu11;
         private PictureBox pictureBox11;
+        private NumericUpDown numericUpDown13;
+        private TextBox textBox9;
+        private TextBox menu13;
+        private PictureBox pictureBox13;
+        private NumericUpDown numericUpDown12;
+        private TextBox textBox7;
+        private TextBox menu12;
+        private PictureBox pictureBox12;
+        private NumericUpDown numericUpDown16;
+        private TextBox textBox14;
+        private TextBox menu16;
+        private PictureBox pictureBox16;
+        private NumericUpDown numericUpDown15;
+        private TextBox textBox13;
+        private TextBox menu15;
+        private PictureBox pictureBox15;
+        private NumericUpDown numericUpDown14;
+        private TextBox textBox11;
+        private TextBox menu14;
+        private PictureBox pictureBox14;
+        private NumericUpDown numericUpDown18;
+        private TextBox textBox19;
+        private TextBox menu18;
+        private PictureBox pictureBox18;
+        private NumericUpDown numericUpDown17;
+        private TextBox textBox16;
+        private TextBox menu17;
+        private PictureBox pictureBox17;
     }
 }

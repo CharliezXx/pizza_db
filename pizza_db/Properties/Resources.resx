@@ -118,40 +118,61 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="พิซซ่าหน้าเลิฟเวอร์ สุพรีม (Pizza Lovers Supreme)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\พิซซ่าหน้าเลิฟเวอร์ สุพรีม (Pizza Lovers Supreme).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="spagety" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spagety.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="พิซซ่าหน้ากะเพราไก่ (Pizza Ka Prao Chicken)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\พิซซ่าหน้ากะเพราไก่ (Pizza Ka Prao Chicken).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="7f95348d-7a64-4d96-8f1b-8f7ffca37f66" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7f95348d-7a64-4d96-8f1b-8f7ffca37f66.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="พิซซ่าหน้าซีฟู้ด (Pizza Seafood)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\พิซซ่าหน้าซีฟู้ด (Pizza Seafood).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="พิซซ่าหน้ามัสมั่นทูน่า (Pizza Massaman)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\พิซซ่าหน้ามัสมั่นทูน่า (Pizza Massaman).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="พิซซ่าหน้าชิกเก้น ดูโอ (Pizza Chicken Duo)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\พิซซ่าหน้าชิกเก้น ดูโอ (Pizza Chicken Duo).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pepsi 410 ml." type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepsi 410 ml..jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="พิซซ่าหน้าซอสเซส ไอซ์แลนด์ (Pizza Sausage Island)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\พิซซ่าหน้าซอสเซส ไอซ์แลนด์ (Pizza Sausage Island).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="พิซซ่าหน้าฮาวายเอี้ยน (Pizza Hawaiian)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\พิซซ่าหน้าฮาวายเอี้ยน (Pizza Hawaiian).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="พิซซ่าหน้าผักโขม (Pizza Spinach Cheese)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\พิซซ่าหน้าผักโขม (Pizza Spinach Cheese).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ไก่ทอดนิวออลีน" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ไก่ทอดนิวออลีน.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="พิซซ่าหน้าพอร์คพาเหรด (Pizza Pork Parade)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\พิซซ่าหน้าพอร์คพาเหรด (Pizza Pork Parade).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="พิซซ่าหน้าต้มยำซีฟู้ด (Pizza Tomyum Seafood)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\พิซซ่าหน้าต้มยำซีฟู้ด (Pizza Tomyum Seafood).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="พิซซ่าหน้าซีฟู้ด (Pizza Seafood)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\พิซซ่าหน้าซีฟู้ด (Pizza Seafood).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="สลัดผักสไตล์ไอแอมพิซซ่า" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\สลัดผักสไตล์ไอแอมพิซซ่า.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pepsi 1 L." type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepsi 1 L..jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7f95348d-7a64-4d96-8f1b-8f7ffca37f66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7f95348d-7a64-4d96-8f1b-8f7ffca37f66.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="พิซซ่าหน้าผักโขม (Pizza Spinach Cheese)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\พิซซ่าหน้าผักโขม (Pizza Spinach Cheese).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="เฟรนฟราย" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\เฟรนฟราย.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="พิซซ่าหน้าเลิฟเวอร์ สุพรีม (Pizza Lovers Supreme)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\พิซซ่าหน้าเลิฟเวอร์ สุพรีม (Pizza Lovers Supreme).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pepsi can 245 ml." type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pepsi can 245 ml..jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="พิซซ่าหน้าฮาวายเอี้ยน (Pizza Hawaiian)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\พิซซ่าหน้าฮาวายเอี้ยน (Pizza Hawaiian).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="พิซซ่าหน้ามัสมั่นทูน่า (Pizza Massaman)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\พิซซ่าหน้ามัสมั่นทูน่า (Pizza Massaman).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="พิซซ่าหน้ากะเพราไก่ (Pizza Ka Prao Chicken)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\พิซซ่าหน้ากะเพราไก่ (Pizza Ka Prao Chicken).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="พิซซ่าหน้าชิกเก้น ดูโอ (Pizza Chicken Duo)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\พิซซ่าหน้าชิกเก้น ดูโอ (Pizza Chicken Duo).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="พิซซ่าหน้าต้มยำซีฟู้ด (Pizza Tomyum Seafood)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\พิซซ่าหน้าต้มยำซีฟู้ด (Pizza Tomyum Seafood).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="น้ำทิพย์ 550 มล." type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\น้ำทิพย์ 550 มล..jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
