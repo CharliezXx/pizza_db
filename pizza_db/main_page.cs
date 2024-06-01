@@ -20,6 +20,7 @@ namespace pizza_db
         public main_page()
         {
             InitializeComponent();
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -66,6 +67,26 @@ namespace pizza_db
         }
 
         private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_get_bill_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menu6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
         {
 
         }
