@@ -5,9 +5,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace pizza_db
 {
@@ -26,8 +28,7 @@ namespace pizza_db
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        void clear()
         {
             textBox_address.Text = null;
             textBox_city.Text = null;
@@ -35,6 +36,10 @@ namespace pizza_db
             textBox_road.Text = null;
             textBox_zipcode.Text = null;
             textBox_tel.Text = null;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            clear();
         }
 
         private void button_back_Click(object sender, EventArgs e)
@@ -49,6 +54,7 @@ namespace pizza_db
         {
 
             int a_id = first_page.uid;
+            
             var name = textBox_name.Text;
             var addr = textBox_address.Text;
             var road = textBox_road.Text;
@@ -74,7 +80,7 @@ namespace pizza_db
 
             try
             {
-                
+
                 MessageBox.Show("Save Data Completed!");
 
             }
@@ -87,13 +93,13 @@ namespace pizza_db
         }
         private void open_connection()
         {
-
+            
             conn.Open();
 
         }
         private void edit_info_Load(object sender, EventArgs e)
         {
-
+            
             
         }
 
@@ -105,6 +111,44 @@ namespace pizza_db
         private void edit_info_Load_1(object sender, EventArgs e)
         {
             open_connection();
+            comm = conn.CreateCommand();
+            int a_id = first_page.uid;
+            var name = textBox_name.Text;
+            var addr = textBox_address.Text;
+            var road = textBox_road.Text;
+            var zipcode = textBox_zipcode.Text;
+            var tel = textBox_tel.Text;
+            var city = textBox_city.Text;
+
+
+            comm.Parameters.AddWithValue("@a_id", a_id);
+            comm.Parameters.AddWithValue("@name", name);
+            comm.Parameters.AddWithValue("@addr", addr);
+            
+            comm.Parameters.AddWithValue("@road", road);
+            comm.Parameters.AddWithValue("@tel", tel);
+            comm.Parameters.AddWithValue("@city", city);
+            comm.Parameters.AddWithValue("@zipcode", zipcode);
+
+
+            comm.CommandText = "SELECT name from customer where addr_id = @a_id";
+            String name_old = Convert.ToString(comm.ExecuteScalar());
+            textBox_name.Text = name_old;
+            comm.CommandText = "SELECT place from addr where addr_id = @a_id";
+            String address_old = Convert.ToString(comm.ExecuteScalar());
+            textBox_address.Text = address_old;
+            comm.CommandText = "SELECT road from addr where addr_id = @a_id";
+            String road_old = Convert.ToString(comm.ExecuteScalar());
+            textBox_road.Text = road_old;
+            comm.CommandText = "SELECT zipcode from addr where addr_id = @a_id";
+            String zipcode_old = Convert.ToString(comm.ExecuteScalar());
+            textBox_zipcode.Text = zipcode_old;
+            comm.CommandText = "SELECT tel from customer where addr_id = @a_id";
+            String tel_old = Convert.ToString(comm.ExecuteScalar());
+            textBox_tel.Text = tel_old;
+            comm.CommandText = "SELECT city from addr where addr_id = @a_id";
+            String city_old = Convert.ToString(comm.ExecuteScalar());
+            textBox_city.Text = city_old;
         }
     }
 }
