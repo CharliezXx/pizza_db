@@ -73,9 +73,9 @@ namespace pizza_db
             comm.Parameters.AddWithValue("@city", city);
             comm.Parameters.AddWithValue("@zipcode", zipcode);
             
-            comm.CommandText = "INSERT INTO pizza_proj.addr (addr_id,place,road,zipcode,city) values(@a_id,@addr,@road,@zipcode,@city)on duplicate key update place = @addr,road =@road,zipcode=@zipcode,city=@city";
+            comm.CommandText = "INSERT INTO pizza_proj.addr (addr_id,place,road,zipcode,city,tel) values(@a_id,@addr,@road,@zipcode,@city,@tel)on duplicate key update place = @addr,road =@road,zipcode=@zipcode,city=@city,tel=@tel";
             int addedinfo = comm.ExecuteNonQuery();
-            comm.CommandText = "INSERT INTO pizza_proj.customer (customer_id,name,tel,addr_id) values(@a_id,@name,@tel,@a_id)on duplicate key update customer_id=@a_id,name=@name , tel = @tel ,addr_id = @a_id ,username=@user ";
+            comm.CommandText = "INSERT INTO pizza_proj.customer (customer_id,name,addr_id) values(@a_id,@name,@a_id)on duplicate key update customer_id=@a_id,name=@name ,addr_id = @a_id ,username=@user ";
             int addedinfo2 = comm.ExecuteNonQuery();
 
             try
@@ -143,7 +143,7 @@ namespace pizza_db
             comm.CommandText = "SELECT zipcode from addr where addr_id = @a_id";
             String zipcode_old = Convert.ToString(comm.ExecuteScalar());
             textBox_zipcode.Text = zipcode_old;
-            comm.CommandText = "SELECT tel from customer where addr_id = @a_id";
+            comm.CommandText = "SELECT tel from addr where addr_id = @a_id";
             String tel_old = Convert.ToString(comm.ExecuteScalar());
             textBox_tel.Text = tel_old;
             comm.CommandText = "SELECT city from addr where addr_id = @a_id";

@@ -60,8 +60,14 @@ namespace pizza_db
             this.Close();
         }
 
-        void clear_data() {
+        void clear_data()
+        {
             name = "";
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

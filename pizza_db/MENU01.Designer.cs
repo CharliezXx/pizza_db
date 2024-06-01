@@ -1,6 +1,6 @@
 ﻿namespace pizza_db
 {
-    partial class main_page
+    partial class MENU01
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label_username = new Label();
-            button_logout = new Button();
-            button_edit_address = new Button();
+            textBox10 = new TextBox();
             button2 = new Button();
+            button1 = new Button();
+            label_username = new Label();
+            button5 = new Button();
             panel1 = new Panel();
-            comboBox7 = new ComboBox();
-            numericUpDown7 = new NumericUpDown();
-            textBox21 = new TextBox();
-            textBox22 = new TextBox();
-            textBox23 = new TextBox();
-            pictureBox7 = new PictureBox();
             comboBox6 = new ComboBox();
             numericUpDown6 = new NumericUpDown();
             comboBox5 = new ComboBox();
@@ -75,10 +70,13 @@
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
-            textBox10 = new TextBox();
+            comboBox7 = new ComboBox();
+            numericUpDown7 = new NumericUpDown();
+            textBox21 = new TextBox();
+            textBox22 = new TextBox();
+            textBox23 = new TextBox();
+            pictureBox7 = new PictureBox();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown4).BeginInit();
@@ -91,48 +89,54 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
+            // 
+            // textBox10
+            // 
+            textBox10.Location = new Point(734, 577);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(122, 23);
+            textBox10.TabIndex = 35;
+            textBox10.Text = "Total price ";
+            textBox10.TextAlign = HorizontalAlignment.Center;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(879, 531);
+            button2.Name = "button2";
+            button2.Size = new Size(200, 65);
+            button2.TabIndex = 34;
+            button2.Text = "Continue to PAYMENT";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(984, 23);
+            button1.Name = "button1";
+            button1.Size = new Size(95, 65);
+            button1.TabIndex = 33;
+            button1.Text = "Logout";
+            button1.UseVisualStyleBackColor = true;
             // 
             // label_username
             // 
             label_username.AutoSize = true;
-            label_username.Location = new Point(29, 27);
+            label_username.Location = new Point(49, 23);
             label_username.Name = "label_username";
             label_username.Size = new Size(60, 15);
-            label_username.TabIndex = 2;
+            label_username.TabIndex = 20;
             label_username.Text = "Username";
-            label_username.Click += label_username_Click;
             // 
-            // button_logout
+            // button5
             // 
-            button_logout.Location = new Point(1007, 55);
-            button_logout.Margin = new Padding(3, 2, 3, 2);
-            button_logout.Name = "button_logout";
-            button_logout.Size = new Size(66, 55);
-            button_logout.TabIndex = 3;
-            button_logout.Text = "Logout";
-            button_logout.UseVisualStyleBackColor = true;
-            button_logout.Click += button1_Click_1;
-            // 
-            // button_edit_address
-            // 
-            button_edit_address.Location = new Point(30, 55);
-            button_edit_address.Margin = new Padding(3, 2, 3, 2);
-            button_edit_address.Name = "button_edit_address";
-            button_edit_address.Size = new Size(65, 55);
-            button_edit_address.TabIndex = 4;
-            button_edit_address.Text = "Edit";
-            button_edit_address.UseVisualStyleBackColor = true;
-            button_edit_address.Click += button_edit_address_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(873, 549);
-            button2.Name = "button2";
-            button2.Size = new Size(200, 65);
-            button2.TabIndex = 98;
-            button2.Text = "Continue to PAYMENT";
-            button2.UseVisualStyleBackColor = true;
+            button5.Location = new Point(18, 51);
+            button5.Name = "button5";
+            button5.Size = new Size(143, 44);
+            button5.TabIndex = 82;
+            button5.Text = "Edit profile";
+            button5.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -179,64 +183,11 @@
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(textBox1);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(12, 131);
+            panel1.Location = new Point(18, 113);
             panel1.Name = "panel1";
             panel1.Size = new Size(1061, 401);
-            panel1.TabIndex = 100;
-            // 
-            // comboBox7
-            // 
-            comboBox7.AllowDrop = true;
-            comboBox7.FormattingEnabled = true;
-            comboBox7.Items.AddRange(new object[] { "S", "M", "L", "XL" });
-            comboBox7.Location = new Point(49, 506);
-            comboBox7.Name = "comboBox7";
-            comboBox7.Size = new Size(121, 23);
-            comboBox7.TabIndex = 144;
-            comboBox7.Text = "Size";
-            // 
-            // numericUpDown7
-            // 
-            numericUpDown7.Location = new Point(176, 507);
-            numericUpDown7.Name = "numericUpDown7";
-            numericUpDown7.Size = new Size(82, 23);
-            numericUpDown7.TabIndex = 143;
-            // 
-            // textBox21
-            // 
-            textBox21.Location = new Point(18, 447);
-            textBox21.Multiline = true;
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(354, 53);
-            textBox21.TabIndex = 142;
-            textBox21.Text = "\r\ndescription";
-            textBox21.TextAlign = HorizontalAlignment.Center;
-            // 
-            // textBox22
-            // 
-            textBox22.Location = new Point(272, 506);
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(100, 23);
-            textBox22.TabIndex = 141;
-            textBox22.Text = "PRICE";
-            textBox22.TextAlign = HorizontalAlignment.Center;
-            // 
-            // textBox23
-            // 
-            textBox23.Location = new Point(18, 418);
-            textBox23.Name = "textBox23";
-            textBox23.Size = new Size(354, 23);
-            textBox23.TabIndex = 140;
-            textBox23.Text = "PIZZA01";
-            textBox23.TextAlign = HorizontalAlignment.Center;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Location = new Point(378, 402);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(140, 127);
-            pictureBox7.TabIndex = 139;
-            pictureBox7.TabStop = false;
+            panel1.TabIndex = 97;
+            panel1.Paint += panel1_Paint;
             // 
             // comboBox6
             // 
@@ -528,10 +479,9 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(18, 48);
+            textBox3.Location = new Point(17, 48);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
             textBox3.Size = new Size(354, 53);
             textBox3.TabIndex = 100;
             textBox3.Text = "\r\ndescription";
@@ -541,7 +491,6 @@
             // 
             textBox2.Location = new Point(271, 107);
             textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 99;
             textBox2.Text = "PRICE";
@@ -551,7 +500,6 @@
             // 
             textBox1.Location = new Point(17, 19);
             textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
             textBox1.Size = new Size(354, 23);
             textBox1.TabIndex = 98;
             textBox1.Text = "PIZZA01";
@@ -565,35 +513,75 @@
             pictureBox1.TabIndex = 97;
             pictureBox1.TabStop = false;
             // 
-            // textBox10
+            // comboBox7
             // 
-            textBox10.Location = new Point(732, 591);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(122, 23);
-            textBox10.TabIndex = 99;
-            textBox10.Text = "Total price ";
-            textBox10.TextAlign = HorizontalAlignment.Center;
-            textBox10.TextChanged += textBox10_TextChanged;
+            comboBox7.AllowDrop = true;
+            comboBox7.FormattingEnabled = true;
+            comboBox7.Items.AddRange(new object[] { "S", "M", "L", "XL" });
+            comboBox7.Location = new Point(49, 506);
+            comboBox7.Name = "comboBox7";
+            comboBox7.Size = new Size(121, 23);
+            comboBox7.TabIndex = 144;
+            comboBox7.Text = "Size";
             // 
-            // main_page
+            // numericUpDown7
+            // 
+            numericUpDown7.Location = new Point(176, 507);
+            numericUpDown7.Name = "numericUpDown7";
+            numericUpDown7.Size = new Size(82, 23);
+            numericUpDown7.TabIndex = 143;
+            // 
+            // textBox21
+            // 
+            textBox21.Location = new Point(18, 447);
+            textBox21.Multiline = true;
+            textBox21.Name = "textBox21";
+            textBox21.Size = new Size(354, 53);
+            textBox21.TabIndex = 142;
+            textBox21.Text = "\r\ndescription";
+            textBox21.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox22
+            // 
+            textBox22.Location = new Point(272, 506);
+            textBox22.Name = "textBox22";
+            textBox22.Size = new Size(100, 23);
+            textBox22.TabIndex = 141;
+            textBox22.Text = "PRICE";
+            textBox22.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox23
+            // 
+            textBox23.Location = new Point(18, 418);
+            textBox23.Name = "textBox23";
+            textBox23.Size = new Size(354, 23);
+            textBox23.TabIndex = 140;
+            textBox23.Text = "PIZZA01";
+            textBox23.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Location = new Point(378, 402);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(140, 127);
+            pictureBox7.TabIndex = 139;
+            pictureBox7.TabStop = false;
+            // 
+            // MENU01
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoScroll = true;
-            ClientSize = new Size(1092, 642);
+            ClientSize = new Size(1092, 619);
             Controls.Add(button2);
             Controls.Add(panel1);
+            Controls.Add(button5);
             Controls.Add(textBox10);
-            Controls.Add(button_edit_address);
-            Controls.Add(button_logout);
+            Controls.Add(button1);
             Controls.Add(label_username);
-            Name = "main_page";
-            Text = "Main";
-            Load += main_page_Load;
+            Name = "MENU01";
+            Text = "MENU";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown6).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown5).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown4).EndInit();
@@ -606,15 +594,18 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Label label_username;
-        private Button button_logout;
-        private Button button_edit_address;
+        private TextBox textBox10;
         private Button button2;
+        private Button button1;
+        private Label label_username;
+        private Button button5;
         private Panel panel1;
         private ComboBox comboBox7;
         private NumericUpDown numericUpDown7;
@@ -658,6 +649,5 @@
         private TextBox textBox2;
         private TextBox textBox1;
         private PictureBox pictureBox1;
-        private TextBox textBox10;
     }
 }

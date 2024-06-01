@@ -88,7 +88,7 @@ namespace pizza_db
             }
             else if (textBox_name_firstpage.Text != name || textBox_password_firstpage.Text != pass || pass != conpass)
             {
-                MessageBox.Show("Wrong password User ID = " + Convert.ToString(uid)); //เช็คค่าเฉยๆ
+                //MessageBox.Show("Wrong password User ID = " + Convert.ToString(uid)); //เช็คค่าเฉยๆ
                 error_first_page.Visible = true;
             } 
             else if (textBox_name_firstpage.Text == name && textBox_password_firstpage.Text == pass)
