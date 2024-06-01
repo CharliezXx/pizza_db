@@ -13,9 +13,9 @@ namespace pizza_db
 {
     public partial class edit_info : Form
     {
-        MySqlConnection conn = new MySqlConnection("host=localhost;user=root;password=;database=pizza_proj");
-        
-
+        private const string ConnectionString = "host=localhost;user=root;password=;database=pizza_proj";
+        MySqlConnection conn = new MySqlConnection(ConnectionString);
+        MySqlCommand comm;
 
         public edit_info()
         {
@@ -47,23 +47,61 @@ namespace pizza_db
 
         private void button_save_Click(object sender, EventArgs e)
         {
-            MySqlCommand send_name;
-            MySqlCommand a_id;
-            var u_id = first_page.uid;
-            var name = textBox_name.Text;
-            
-            send_name = conn.CreateCommand();
-            a_id = conn.CreateCommand();
-            send_name.Parameters.AddWithValue("@name", name);
-            a_id.Parameters.AddWithValue("@uid", u_id);
-            send_name.CommandText = "Update customer set name = @name where customer_id = @uid";
-            a_id.CommandText = "Insert into addr_id from pizza_proj.addr";
-        }
 
+            int a_id = first_page.uid;
+            var name = textBox_name.Text;
+            var addr = textBox_address.Text;
+            var road = textBox_road.Text;
+            var zipcode = textBox_zipcode.Text;
+            var tel = textBox_tel.Text;
+            var user = first_page.username;
+            comm = conn.CreateCommand();
+
+            comm.Parameters.AddWithValue("@user", user);
+            comm.Parameters.AddWithValue("@name", name);
+            comm.Parameters.AddWithValue("@addr", addr);
+            comm.Parameters.AddWithValue("@a_id", a_id);
+            comm.Parameters.AddWithValue("@road", road);
+            comm.Parameters.AddWithValue("@tel", tel);
+            comm.Parameters.AddWithValue("@zipcode", zipcode);
+            
+            comm.CommandText = "INSERT INTO pizza_proj.addr (addr_id,place,road,zipcode) values(@a_id,@addr,@road,@zipcode)on duplicate key update place = @addr,road =@road,zipcode=@zipcode";
+            comm.CommandText = "INSERT INTO pizza_proj.customer (name,tel,addr_id) values(@name,@tel,@a_id)on duplicate key update name=@name , tel = @tel ,addr_id = @a_id ,customer_id = @a_id,username=@user ";
+            
+
+            try
+            {
+                int addedinfo = comm.ExecuteNonQuery();
+                MessageBox.Show("Save Data Completed!");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+        }
+        private void open_connection()
+        {
+
+            conn.Open();
+
+        }
         private void edit_info_Load(object sender, EventArgs e)
         {
-            conn.Open();
-           
+
+            
+        }
+
+        private void edit_info_Activated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void edit_info_Load_1(object sender, EventArgs e)
+        {
+            open_connection();
         }
     }
 }

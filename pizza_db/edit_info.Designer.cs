@@ -208,6 +208,8 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "edit_info";
             Text = "edit_info";
+            Activated += edit_info_Activated;
+            Load += edit_info_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
