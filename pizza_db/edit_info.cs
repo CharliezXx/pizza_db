@@ -54,6 +54,7 @@ namespace pizza_db
             var road = textBox_road.Text;
             var zipcode = textBox_zipcode.Text;
             var tel = textBox_tel.Text;
+            var city = textBox_city.Text;
             var user = first_page.username;
             comm = conn.CreateCommand();
 
@@ -63,15 +64,17 @@ namespace pizza_db
             comm.Parameters.AddWithValue("@a_id", a_id);
             comm.Parameters.AddWithValue("@road", road);
             comm.Parameters.AddWithValue("@tel", tel);
+            comm.Parameters.AddWithValue("@city", city);
             comm.Parameters.AddWithValue("@zipcode", zipcode);
             
-            comm.CommandText = "INSERT INTO pizza_proj.addr (addr_id,place,road,zipcode) values(@a_id,@addr,@road,@zipcode)on duplicate key update place = @addr,road =@road,zipcode=@zipcode";
-            comm.CommandText = "INSERT INTO pizza_proj.customer (name,tel,addr_id) values(@name,@tel,@a_id)on duplicate key update name=@name , tel = @tel ,addr_id = @a_id ,customer_id = @a_id,username=@user ";
-            
+            comm.CommandText = "INSERT INTO pizza_proj.addr (addr_id,place,road,zipcode,city) values(@a_id,@addr,@road,@zipcode,@city)on duplicate key update place = @addr,road =@road,zipcode=@zipcode,city=@city";
+            int addedinfo = comm.ExecuteNonQuery();
+            comm.CommandText = "INSERT INTO pizza_proj.customer (customer_id,name,tel,addr_id) values(@a_id,@name,@tel,@a_id)on duplicate key update customer_id=@a_id,name=@name , tel = @tel ,addr_id = @a_id ,username=@user ";
+            int addedinfo2 = comm.ExecuteNonQuery();
 
             try
             {
-                int addedinfo = comm.ExecuteNonQuery();
+                
                 MessageBox.Show("Save Data Completed!");
 
             }
