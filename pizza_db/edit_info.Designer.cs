@@ -73,7 +73,7 @@
             textBox_address.Multiline = true;
             textBox_address.Name = "textBox_address";
             textBox_address.Size = new Size(443, 121);
-            textBox_address.TabIndex = 3;
+            textBox_address.TabIndex = 2;
             // 
             // label_road
             // 
@@ -99,21 +99,21 @@
             textBox_name.Location = new Point(10, 49);
             textBox_name.Name = "textBox_name";
             textBox_name.Size = new Size(211, 23);
-            textBox_name.TabIndex = 1;
+            textBox_name.TabIndex = 5;
             // 
             // textBox_zipcode
             // 
             textBox_zipcode.Location = new Point(10, 350);
             textBox_zipcode.Name = "textBox_zipcode";
             textBox_zipcode.Size = new Size(211, 23);
-            textBox_zipcode.TabIndex = 7;
+            textBox_zipcode.TabIndex = 6;
             // 
             // textBox_road
             // 
             textBox_road.Location = new Point(10, 248);
             textBox_road.Name = "textBox_road";
             textBox_road.Size = new Size(211, 23);
-            textBox_road.TabIndex = 4;
+            textBox_road.TabIndex = 7;
             // 
             // label_zipcode
             // 
@@ -138,14 +138,14 @@
             textBox_city.Location = new Point(10, 298);
             textBox_city.Name = "textBox_city";
             textBox_city.Size = new Size(211, 23);
-            textBox_city.TabIndex = 6;
+            textBox_city.TabIndex = 9;
             // 
             // button_save
             // 
             button_save.Location = new Point(240, 302);
             button_save.Name = "button_save";
             button_save.Size = new Size(213, 75);
-            button_save.TabIndex = 8;
+            button_save.TabIndex = 11;
             button_save.Text = "SAVE";
             button_save.UseVisualStyleBackColor = true;
             button_save.Click += button_save_Click;
@@ -155,7 +155,7 @@
             textBox_tel.Location = new Point(242, 248);
             textBox_tel.Name = "textBox_tel";
             textBox_tel.Size = new Size(211, 23);
-            textBox_tel.TabIndex = 5;
+            textBox_tel.TabIndex = 13;
             // 
             // label_tel
             // 
@@ -171,7 +171,7 @@
             button_back.Location = new Point(10, 398);
             button_back.Name = "button_back";
             button_back.Size = new Size(211, 75);
-            button_back.TabIndex = 10;
+            button_back.TabIndex = 14;
             button_back.Text = "BACK";
             button_back.UseVisualStyleBackColor = true;
             button_back.Click += button_back_Click;
@@ -181,7 +181,7 @@
             button1.Location = new Point(240, 398);
             button1.Name = "button1";
             button1.Size = new Size(213, 75);
-            button1.TabIndex = 9;
+            button1.TabIndex = 15;
             button1.Text = "CLEAR";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
@@ -191,7 +191,7 @@
             textBox_lastname.Location = new Point(242, 49);
             textBox_lastname.Name = "textBox_lastname";
             textBox_lastname.Size = new Size(211, 23);
-            textBox_lastname.TabIndex = 2;
+            textBox_lastname.TabIndex = 16;
             // 
             // label_lastname
             // 
@@ -204,10 +204,8 @@
             // 
             // edit_info
             // 
-            AcceptButton = button_save;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(466, 494);
             Controls.Add(label_lastname);
             Controls.Add(textBox_lastname);
@@ -228,10 +226,7 @@
             Controls.Add(label_address);
             Controls.Add(label_edit_info);
             Margin = new Padding(3, 2, 3, 2);
-            MaximizeBox = false;
             Name = "edit_info";
-            SizeGripStyle = SizeGripStyle.Hide;
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "edit_info";
             Activated += edit_info_Activated;
             Load += edit_info_Load_1;
