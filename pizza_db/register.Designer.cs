@@ -48,7 +48,7 @@
             back_register_button.Location = new Point(68, 267);
             back_register_button.Name = "back_register_button";
             back_register_button.Size = new Size(153, 57);
-            back_register_button.TabIndex = 1;
+            back_register_button.TabIndex = 6;
             back_register_button.Text = "back";
             back_register_button.UseVisualStyleBackColor = true;
             back_register_button.Click += back_register_button_Click;
@@ -99,14 +99,14 @@
             textBox_name_regis.Location = new Point(68, 89);
             textBox_name_regis.Name = "textBox_name_regis";
             textBox_name_regis.Size = new Size(377, 23);
-            textBox_name_regis.TabIndex = 6;
+            textBox_name_regis.TabIndex = 1;
             // 
             // textBox_password_regis
             // 
             textBox_password_regis.Location = new Point(68, 137);
             textBox_password_regis.Name = "textBox_password_regis";
             textBox_password_regis.Size = new Size(377, 23);
-            textBox_password_regis.TabIndex = 7;
+            textBox_password_regis.TabIndex = 2;
             textBox_password_regis.UseSystemPasswordChar = true;
             textBox_password_regis.TextChanged += textBox_password_regis_TextChanged;
             // 
@@ -115,7 +115,7 @@
             textBox_confirm_regis.Location = new Point(68, 190);
             textBox_confirm_regis.Name = "textBox_confirm_regis";
             textBox_confirm_regis.Size = new Size(377, 23);
-            textBox_confirm_regis.TabIndex = 8;
+            textBox_confirm_regis.TabIndex = 3;
             textBox_confirm_regis.UseSystemPasswordChar = true;
             // 
             // confirm_regis_button
@@ -124,7 +124,7 @@
             confirm_regis_button.Location = new Point(292, 267);
             confirm_regis_button.Name = "confirm_regis_button";
             confirm_regis_button.Size = new Size(153, 57);
-            confirm_regis_button.TabIndex = 9;
+            confirm_regis_button.TabIndex = 5;
             confirm_regis_button.Text = "lesssgooo";
             confirm_regis_button.UseVisualStyleBackColor = true;
             confirm_regis_button.Click += confirm_regis_button_Click;
@@ -156,7 +156,7 @@
             checkBox_show_regis.Name = "checkBox_show_regis";
             checkBox_show_regis.RightToLeft = RightToLeft.Yes;
             checkBox_show_regis.Size = new Size(108, 19);
-            checkBox_show_regis.TabIndex = 12;
+            checkBox_show_regis.TabIndex = 4;
             checkBox_show_regis.Text = "Show password";
             checkBox_show_regis.UseVisualStyleBackColor = true;
             checkBox_show_regis.CheckedChanged += checkBox1_CheckedChanged;
@@ -166,6 +166,7 @@
             AcceptButton = confirm_regis_button;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(524, 361);
             Controls.Add(checkBox_show_regis);
             Controls.Add(error_label_username_taken);
@@ -179,7 +180,10 @@
             Controls.Add(label_username_regis);
             Controls.Add(register_text1);
             Controls.Add(back_register_button);
+            MinimizeBox = false;
             Name = "register";
+            SizeGripStyle = SizeGripStyle.Hide;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Register";
             Load += register_Load;
             ResumeLayout(false);

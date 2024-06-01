@@ -45,7 +45,7 @@
             login_button.Location = new Point(82, 242);
             login_button.Name = "login_button";
             login_button.Size = new Size(358, 59);
-            login_button.TabIndex = 0;
+            login_button.TabIndex = 6;
             login_button.Text = "Login";
             login_button.UseVisualStyleBackColor = true;
             login_button.Click += login_button_Click;
@@ -67,7 +67,7 @@
             textBox_name_firstpage.Location = new Point(82, 111);
             textBox_name_firstpage.Name = "textBox_name_firstpage";
             textBox_name_firstpage.Size = new Size(358, 23);
-            textBox_name_firstpage.TabIndex = 2;
+            textBox_name_firstpage.TabIndex = 1;
             textBox_name_firstpage.TextChanged += textBox1_TextChanged;
             // 
             // username_label
@@ -84,7 +84,7 @@
             textBox_password_firstpage.Location = new Point(82, 165);
             textBox_password_firstpage.Name = "textBox_password_firstpage";
             textBox_password_firstpage.Size = new Size(358, 23);
-            textBox_password_firstpage.TabIndex = 4;
+            textBox_password_firstpage.TabIndex = 2;
             textBox_password_firstpage.UseSystemPasswordChar = true;
             // 
             // password_label
@@ -102,7 +102,7 @@
             register_linklabel.Location = new Point(222, 199);
             register_linklabel.Name = "register_linklabel";
             register_linklabel.Size = new Size(47, 15);
-            register_linklabel.TabIndex = 6;
+            register_linklabel.TabIndex = 3;
             register_linklabel.TabStop = true;
             register_linklabel.Text = "Sign up";
             register_linklabel.LinkClicked += register_linklabel_LinkClicked;
@@ -123,7 +123,7 @@
             checkBox_showpass_login.Name = "checkBox_showpass_login";
             checkBox_showpass_login.RightToLeft = RightToLeft.Yes;
             checkBox_showpass_login.Size = new Size(108, 19);
-            checkBox_showpass_login.TabIndex = 8;
+            checkBox_showpass_login.TabIndex = 4;
             checkBox_showpass_login.Text = "Show password";
             checkBox_showpass_login.UseVisualStyleBackColor = true;
             checkBox_showpass_login.CheckedChanged += checkBox_showpass_login_CheckedChanged;
@@ -144,6 +144,7 @@
             AcceptButton = login_button;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(524, 361);
             Controls.Add(error_first_page);
             Controls.Add(checkBox_showpass_login);
@@ -155,7 +156,10 @@
             Controls.Add(textBox_name_firstpage);
             Controls.Add(Login_text);
             Controls.Add(login_button);
+            MaximizeBox = false;
             Name = "first_page";
+            SizeGripStyle = SizeGripStyle.Hide;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Form1_Load;
             ResumeLayout(false);

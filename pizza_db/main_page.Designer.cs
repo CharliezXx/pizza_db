@@ -33,6 +33,14 @@
             button_edit_address = new Button();
             button_get_bill = new Button();
             panel1 = new Panel();
+            numericUpDown18 = new NumericUpDown();
+            textBox19 = new TextBox();
+            menu18 = new TextBox();
+            pictureBox18 = new PictureBox();
+            numericUpDown17 = new NumericUpDown();
+            textBox16 = new TextBox();
+            menu17 = new TextBox();
+            pictureBox17 = new PictureBox();
             numericUpDown16 = new NumericUpDown();
             textBox14 = new TextBox();
             menu16 = new TextBox();
@@ -109,15 +117,11 @@
             menu1 = new TextBox();
             pictureBox1 = new PictureBox();
             textBox10 = new TextBox();
-            numericUpDown17 = new NumericUpDown();
-            textBox16 = new TextBox();
-            menu17 = new TextBox();
-            pictureBox17 = new PictureBox();
-            numericUpDown18 = new NumericUpDown();
-            textBox19 = new TextBox();
-            menu18 = new TextBox();
-            pictureBox18 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown18).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown17).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown15).BeginInit();
@@ -150,10 +154,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown17).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             SuspendLayout();
             // 
             // label_username
@@ -296,6 +296,76 @@
             panel1.Size = new Size(1034, 448);
             panel1.TabIndex = 100;
             panel1.Paint += panel1_Paint;
+            // 
+            // numericUpDown18
+            // 
+            numericUpDown18.Location = new Point(742, 3345);
+            numericUpDown18.Name = "numericUpDown18";
+            numericUpDown18.Size = new Size(82, 23);
+            numericUpDown18.TabIndex = 192;
+            // 
+            // textBox19
+            // 
+            textBox19.Location = new Point(838, 3344);
+            textBox19.Name = "textBox19";
+            textBox19.Size = new Size(100, 23);
+            textBox19.TabIndex = 191;
+            textBox19.Text = "PRICE";
+            textBox19.TextAlign = HorizontalAlignment.Center;
+            // 
+            // menu18
+            // 
+            menu18.Location = new Point(610, 3316);
+            menu18.Name = "menu18";
+            menu18.Size = new Size(354, 23);
+            menu18.TabIndex = 190;
+            menu18.Text = "Water";
+            menu18.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.Image = Properties.Resources.น้ำทิพย์_550_มล_;
+            pictureBox18.Location = new Point(632, 3000);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(310, 310);
+            pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox18.TabIndex = 189;
+            pictureBox18.TabStop = false;
+            // 
+            // numericUpDown17
+            // 
+            numericUpDown17.Location = new Point(212, 3345);
+            numericUpDown17.Name = "numericUpDown17";
+            numericUpDown17.Size = new Size(82, 23);
+            numericUpDown17.TabIndex = 188;
+            // 
+            // textBox16
+            // 
+            textBox16.Location = new Point(308, 3344);
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(100, 23);
+            textBox16.TabIndex = 187;
+            textBox16.Text = "PRICE";
+            textBox16.TextAlign = HorizontalAlignment.Center;
+            // 
+            // menu17
+            // 
+            menu17.Location = new Point(80, 3316);
+            menu17.Name = "menu17";
+            menu17.Size = new Size(354, 23);
+            menu17.TabIndex = 186;
+            menu17.Text = "Vegetable salad";
+            menu17.TextAlign = HorizontalAlignment.Center;
+            // 
+            // pictureBox17
+            // 
+            pictureBox17.Image = Properties.Resources.สลัดผักสไตล์ไอแอมพิซซ่า;
+            pictureBox17.Location = new Point(102, 3000);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(310, 310);
+            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox17.TabIndex = 185;
+            pictureBox17.TabStop = false;
             // 
             // numericUpDown16
             // 
@@ -1001,76 +1071,6 @@
             textBox10.TextAlign = HorizontalAlignment.Center;
             textBox10.TextChanged += textBox10_TextChanged;
             // 
-            // numericUpDown17
-            // 
-            numericUpDown17.Location = new Point(212, 3345);
-            numericUpDown17.Name = "numericUpDown17";
-            numericUpDown17.Size = new Size(82, 23);
-            numericUpDown17.TabIndex = 188;
-            // 
-            // textBox16
-            // 
-            textBox16.Location = new Point(308, 3344);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(100, 23);
-            textBox16.TabIndex = 187;
-            textBox16.Text = "PRICE";
-            textBox16.TextAlign = HorizontalAlignment.Center;
-            // 
-            // menu17
-            // 
-            menu17.Location = new Point(80, 3316);
-            menu17.Name = "menu17";
-            menu17.Size = new Size(354, 23);
-            menu17.TabIndex = 186;
-            menu17.Text = "Vegetable salad";
-            menu17.TextAlign = HorizontalAlignment.Center;
-            // 
-            // pictureBox17
-            // 
-            pictureBox17.Image = Properties.Resources.สลัดผักสไตล์ไอแอมพิซซ่า;
-            pictureBox17.Location = new Point(102, 3000);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(310, 310);
-            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox17.TabIndex = 185;
-            pictureBox17.TabStop = false;
-            // 
-            // numericUpDown18
-            // 
-            numericUpDown18.Location = new Point(742, 3345);
-            numericUpDown18.Name = "numericUpDown18";
-            numericUpDown18.Size = new Size(82, 23);
-            numericUpDown18.TabIndex = 192;
-            // 
-            // textBox19
-            // 
-            textBox19.Location = new Point(838, 3344);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(100, 23);
-            textBox19.TabIndex = 191;
-            textBox19.Text = "PRICE";
-            textBox19.TextAlign = HorizontalAlignment.Center;
-            // 
-            // menu18
-            // 
-            menu18.Location = new Point(610, 3316);
-            menu18.Name = "menu18";
-            menu18.Size = new Size(354, 23);
-            menu18.TabIndex = 190;
-            menu18.Text = "Water";
-            menu18.TextAlign = HorizontalAlignment.Center;
-            // 
-            // pictureBox18
-            // 
-            pictureBox18.Image = Properties.Resources.น้ำทิพย์_550_มล_;
-            pictureBox18.Location = new Point(632, 3000);
-            pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(310, 310);
-            pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox18.TabIndex = 189;
-            pictureBox18.TabStop = false;
-            // 
             // main_page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1088,10 +1088,15 @@
             MaximizeBox = false;
             Name = "main_page";
             SizeGripStyle = SizeGripStyle.Hide;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Main";
             Load += main_page_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown18).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown17).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown16).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown15).EndInit();
@@ -1124,10 +1129,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown17).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
