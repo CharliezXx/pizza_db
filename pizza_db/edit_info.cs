@@ -56,6 +56,7 @@ namespace pizza_db
             int a_id = first_page.uid;
             
             var name = textBox_name.Text;
+            var lastname = textBox_lastname.Text;
             var addr = textBox_address.Text;
             var road = textBox_road.Text;
             var zipcode = textBox_zipcode.Text;
@@ -66,6 +67,7 @@ namespace pizza_db
 
             comm.Parameters.AddWithValue("@user", user);
             comm.Parameters.AddWithValue("@name", name);
+            comm.Parameters.AddWithValue("@lastname", lastname);
             comm.Parameters.AddWithValue("@addr", addr);
             comm.Parameters.AddWithValue("@a_id", a_id);
             comm.Parameters.AddWithValue("@road", road);
@@ -75,7 +77,7 @@ namespace pizza_db
             
             comm.CommandText = "INSERT INTO pizza_proj.addr (addr_id,place,road,zipcode,city,tel) values(@a_id,@addr,@road,@zipcode,@city,@tel)on duplicate key update place = @addr,road =@road,zipcode=@zipcode,city=@city,tel=@tel";
             int addedinfo = comm.ExecuteNonQuery();
-            comm.CommandText = "INSERT INTO pizza_proj.customer (customer_id,name,addr_id) values(@a_id,@name,@a_id)on duplicate key update customer_id=@a_id,name=@name ,addr_id = @a_id ,username=@user ";
+            comm.CommandText = "INSERT INTO pizza_proj.customer (customer_id,firstname,lastname,addr_id) values(@a_id,@name,@lastname,@a_id)on duplicate key update customer_id=@a_id,firstname=@name ,addr_id = @a_id ,username=@user ,lastname=@lastname";
             int addedinfo2 = comm.ExecuteNonQuery();
 
             try
@@ -114,6 +116,7 @@ namespace pizza_db
             comm = conn.CreateCommand();
             int a_id = first_page.uid;
             var name = textBox_name.Text;
+            var lastname = textBox_lastname.Text;
             var addr = textBox_address.Text;
             var road = textBox_road.Text;
             var zipcode = textBox_zipcode.Text;
@@ -122,30 +125,33 @@ namespace pizza_db
 
 
             comm.Parameters.AddWithValue("@a_id", a_id);
-            comm.Parameters.AddWithValue("@name", name);
-            comm.Parameters.AddWithValue("@addr", addr);
             
-            comm.Parameters.AddWithValue("@road", road);
-            comm.Parameters.AddWithValue("@tel", tel);
-            comm.Parameters.AddWithValue("@city", city);
-            comm.Parameters.AddWithValue("@zipcode", zipcode);
 
 
-            comm.CommandText = "SELECT name from customer where addr_id = @a_id";
+            comm.CommandText = "SELECT firstname from customer where addr_id = @a_id";
             String name_old = Convert.ToString(comm.ExecuteScalar());
             textBox_name.Text = name_old;
+
+            comm.CommandText = "SELECT lastname from customer where addr_id = @a_id";
+            String lastname_old = Convert.ToString(comm.ExecuteScalar());
+            textBox_lastname.Text = lastname_old;
+
             comm.CommandText = "SELECT place from addr where addr_id = @a_id";
             String address_old = Convert.ToString(comm.ExecuteScalar());
             textBox_address.Text = address_old;
+
             comm.CommandText = "SELECT road from addr where addr_id = @a_id";
             String road_old = Convert.ToString(comm.ExecuteScalar());
             textBox_road.Text = road_old;
+
             comm.CommandText = "SELECT zipcode from addr where addr_id = @a_id";
             String zipcode_old = Convert.ToString(comm.ExecuteScalar());
             textBox_zipcode.Text = zipcode_old;
+
             comm.CommandText = "SELECT tel from addr where addr_id = @a_id";
             String tel_old = Convert.ToString(comm.ExecuteScalar());
             textBox_tel.Text = tel_old;
+
             comm.CommandText = "SELECT city from addr where addr_id = @a_id";
             String city_old = Convert.ToString(comm.ExecuteScalar());
             textBox_city.Text = city_old;

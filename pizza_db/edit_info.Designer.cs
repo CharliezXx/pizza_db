@@ -44,6 +44,8 @@
             label_tel = new Label();
             button_back = new Button();
             button1 = new Button();
+            textBox_lastname = new TextBox();
+            label_lastname = new Label();
             SuspendLayout();
             // 
             // label_edit_info
@@ -87,16 +89,16 @@
             label_name.AutoSize = true;
             label_name.Location = new Point(10, 31);
             label_name.Name = "label_name";
-            label_name.Size = new Size(95, 15);
+            label_name.Size = new Size(59, 15);
             label_name.TabIndex = 4;
-            label_name.Text = "Name-Lastname";
+            label_name.Text = "Firstname";
             label_name.Click += label_name_Click;
             // 
             // textBox_name
             // 
             textBox_name.Location = new Point(10, 49);
             textBox_name.Name = "textBox_name";
-            textBox_name.Size = new Size(253, 23);
+            textBox_name.Size = new Size(211, 23);
             textBox_name.TabIndex = 5;
             // 
             // textBox_zipcode
@@ -184,11 +186,29 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // textBox_lastname
+            // 
+            textBox_lastname.Location = new Point(242, 49);
+            textBox_lastname.Name = "textBox_lastname";
+            textBox_lastname.Size = new Size(211, 23);
+            textBox_lastname.TabIndex = 16;
+            // 
+            // label_lastname
+            // 
+            label_lastname.AutoSize = true;
+            label_lastname.Location = new Point(242, 31);
+            label_lastname.Name = "label_lastname";
+            label_lastname.Size = new Size(58, 15);
+            label_lastname.TabIndex = 17;
+            label_lastname.Text = "Lastname";
+            // 
             // edit_info
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(466, 494);
+            Controls.Add(label_lastname);
+            Controls.Add(textBox_lastname);
             Controls.Add(button1);
             Controls.Add(button_back);
             Controls.Add(textBox_tel);
@@ -232,5 +252,7 @@
         private Label label_tel;
         private Button button_back;
         private Button button1;
+        private TextBox textBox_lastname;
+        private Label label_lastname;
     }
 }
