@@ -32,6 +32,8 @@ namespace pizza_db
         private void Form1_Load(object sender, EventArgs e)
         {
             open_connection();
+
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -82,8 +84,8 @@ namespace pizza_db
             else if (textBox_name_firstpage.Text == "admin" && textBox_password_firstpage.Text == "admin")
             {
                 this.Hide();
-                order_admin o = new order_admin();
-                o.ShowDialog();
+                //order_admin o = new order_admin();
+                //o.ShowDialog();
                 this.Close();
             }
             else if (textBox_name_firstpage.Text != name || textBox_password_firstpage.Text != pass || pass != conpass)

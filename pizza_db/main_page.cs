@@ -42,6 +42,7 @@ namespace pizza_db
 
             label_username.Text = "Username : " + name;
 
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -73,7 +74,10 @@ namespace pizza_db
 
         private void button_get_bill_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            basket b = new basket();
+            b.ShowDialog();
+            this.Close();
         }
 
         private void menu6_TextChanged(object sender, EventArgs e)
@@ -89,6 +93,15 @@ namespace pizza_db
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        public void cal()
+        {
+            
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            //textBox_price_1.Text = numericUpDown1.Value;
         }
     }
 }
