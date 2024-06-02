@@ -48,6 +48,23 @@ namespace pizza_db
 
             cal();
         }
+        private void insertIntoInBasket(decimal quantity, int menuId)
+        {
+            using (MySqlConnection con = new MySqlConnection())
+            {
+                con.Open();
+
+                string sql = "INSERT INTO in_basket (quantity, menu_id) VALUES (@quantity, @menuId)";
+                MySqlCommand comm = new MySqlCommand(sql, con);
+
+                comm.Parameters.AddWithValue("@quantity", quantity);
+                comm.Parameters.AddWithValue("@menuId", menuId);
+
+                comm.ExecuteNonQuery();
+
+                con.Close();
+            }
+        }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -89,15 +106,34 @@ namespace pizza_db
             int do_command = comm.ExecuteNonQuery();
 
 
-            for (int i = 1; i < 18; i++) {
-                comm = con.CreateCommand();
-                Control q = this.Controls.Find("q" + i, true).FirstOrDefault();
-                Control m = this.Controls.Find("m" + i, true).FirstOrDefault();
-                comm.Parameters.AddWithValue("@quan", q);
-                comm.Parameters.AddWithValue("@mid", m);
-                comm.CommandText = "INSERT INTO pizza_proj.in_basket (quantity,menu_id)VALUES(@quan,@mid) on duplicate key update quantity =@quan,menu_id=@mid";
+            if (q1 != 0)
+            {
+                comm.Parameters.AddWithValue("@quan1", q1);
+                comm.Parameters.AddWithValue("@mid1", m1);
+                comm.CommandText = "INSERT INTO pizza_proj.in_basket (quantity,menu_id)VALUES(@quan1,@mid1) on duplicate key update quantity =@quan1,menu_id=@mid1";
                 do_command = comm.ExecuteNonQuery();
             }
+            
+            if (q2 != 0)
+            {
+                
+                 comm.Parameters.AddWithValue("@quan2", q2);
+                 comm.Parameters.AddWithValue("@mid2", m2);
+                 comm.CommandText = "INSERT INTO pizza_proj.in_basket (quantity,menu_id)VALUES(@quan2,@mid2) on duplicate key update quantity =@quan2,menu_id=@mid2";
+                 do_command = comm.ExecuteNonQuery();
+           
+            }
+            else
+            
+            if (q3 != 0)
+            {
+                comm.Parameters.AddWithValue("@quan3", q3);
+                comm.Parameters.AddWithValue("@mid3", m3);
+                comm.CommandText = "INSERT INTO pizza_proj.in_basket (quantity,menu_id)VALUES(@quan3,@mid3) on duplicate key update quantity =@quan3,menu_id=@mid3";
+                do_command = comm.ExecuteNonQuery();
+            }
+           
+
             // change window to basket
             this.Hide();
             basket b = new basket();
@@ -143,10 +179,9 @@ namespace pizza_db
                 comm.CommandText = "SELECT price from menu where menu_id = @mid";       //
                 int multiplier = Convert.ToInt32(numericUpDown1.Value);                 //ตัวคูณ โดยจำนวนสินค้า
                 int price = Convert.ToInt32(comm.ExecuteScalar())*multiplier;           //คำนวณโดนเอาค่าราคาจาก DB มาคูณจำนวณ
-                comm.Parameters.AddWithValue("@quan", multiplier);
                 
                 
-                int push = comm.ExecuteNonQuery();
+                
                 p1 = price;
                 q1 = multiplier;
                 m1 = mid;//เอาราคาที่คำนวณแล้วไปเก็บไว้ในตัวแปล
@@ -164,9 +199,8 @@ namespace pizza_db
 
                 int multiplier = Convert.ToInt32(numericUpDown1.Value);                 //ตัวคูณ โดยจำนวนสินค้า
                 int price = Convert.ToInt32(comm.ExecuteScalar()) * multiplier;           //คำนวณโดนเอาค่าราคาจาก DB มาคูณจำนวณ
-                comm.Parameters.AddWithValue("@quan", multiplier);
-                comm.CommandText = "INSERT INTO pizza_proj.in_basket (quantity,menu_id)VALUES(@quan,@mid) on duplicate key update quantity =@quan,menu_id=@mid";
-                int push = comm.ExecuteNonQuery();
+                
+                
                 p1 = price;
                 q1 = multiplier;
                 m1 = mid;                                                             //เอาราคาที่คำนวณแล้วไปเก็บไว้ในตัวแปล
@@ -182,9 +216,8 @@ namespace pizza_db
 
                 int multiplier = Convert.ToInt32(numericUpDown1.Value);                 //ตัวคูณ โดยจำนวนสินค้า
                 int price = Convert.ToInt32(comm.ExecuteScalar()) * multiplier;           //คำนวณโดนเอาค่าราคาจาก DB มาคูณจำนวณ
-                comm.Parameters.AddWithValue("@quan", multiplier);
-                comm.CommandText = "INSERT INTO pizza_proj.in_basket (quantity,menu_id)VALUES(@quan,@mid) on duplicate key update quantity =@quan,menu_id=@mid";
-                int push = comm.ExecuteNonQuery();
+                
+                
                 p1 = price;
                 q1 = multiplier;
                 m1 = mid;                                                             //เอาราคาที่คำนวณแล้วไปเก็บไว้ในตัวแปล
@@ -216,9 +249,9 @@ namespace pizza_db
 
                 int multiplier = Convert.ToInt32(numericUpDown2.Value);                 //ตัวคูณ โดยจำนวนสินค้า
                 int price = Convert.ToInt32(comm.ExecuteScalar())*multiplier;
-                comm.Parameters.AddWithValue("@quan", multiplier);
-                comm.CommandText = "INSERT INTO pizza_proj.in_basket (quantity,menu_id)VALUES(@quan,@mid) on duplicate key update quantity =@quan,menu_id=@mid";
-                int push = comm.ExecuteNonQuery();//คำนวณโดนเอาค่าราคาจาก DB มาคูณจำนวณ
+                
+                
+                
                 p2 = price;
                 q2 = multiplier;
                 m2 = mid; //เอาราคาที่คำนวณแล้วไปเก็บไว้ในตัวแปล
@@ -265,6 +298,8 @@ namespace pizza_db
             if (numericUpDown3.Value == 0) //check ว่าถ้าได้เลือกซักชิ้น
             {
                 p3 = 0;
+                q3 = 0;
+                m3 = 0;
                 textBox_price_3.Text = Convert.ToString(p3);
             }
             else if (size3.Text == "S")// s
@@ -277,7 +312,9 @@ namespace pizza_db
 
                 int multiplier = Convert.ToInt32(numericUpDown3.Value);                 //ตัวคูณ โดยจำนวนสินค้า
                 int price = Convert.ToInt32(comm.ExecuteScalar())*multiplier;           //คำนวณโดนเอาค่าราคาจาก DB มาคูณจำนวณ
-                p3 = price;                                                             //เอาราคาที่คำนวณแล้วไปเก็บไว้ในตัวแปล
+                p3 = price;
+                q3 = multiplier;
+                m3 = mid;                                                          //เอาราคาที่คำนวณแล้วไปเก็บไว้ในตัวแปล
                 textBox_price_3.Text = price.ToString();
 
 
@@ -292,6 +329,8 @@ namespace pizza_db
                 int multiplier = Convert.ToInt32(numericUpDown3.Value);
                 int price = Convert.ToInt32(comm.ExecuteScalar()) *multiplier;
                 p3 = price;
+                q3 = multiplier;
+                m3 = mid;
                 textBox_price_3.Text = price.ToString();
             }
             else if (size3.Text == "L")//l
@@ -304,17 +343,23 @@ namespace pizza_db
                 int multiplier = Convert.ToInt32(numericUpDown3.Value);
                 int price = Convert.ToInt32(comm.ExecuteScalar()) * multiplier;
                 p3 = price;
+                q3 = multiplier;
+                m3 = mid;
                 textBox_price_3.Text = price.ToString();
             }
             else
             {
                 p3 = 0;
+                q3 = 0;
+                m3 = 0;
             }
             ////////////////////////////////////////////////////
 
             if (numericUpDown4.Value == 0) //check ว่าถ้าได้เลือกซักชิ้น
             {
                 p4 = 0;
+                q4 = 0;
+                m4 = 0; 
                 textBox_price_4.Text = Convert.ToString(p4);
             }
             else if (size4.Text == "S")// s
@@ -327,7 +372,9 @@ namespace pizza_db
 
                 int multiplier = Convert.ToInt32(numericUpDown4.Value);                 //ตัวคูณ โดยจำนวนสินค้า
                 int price = Convert.ToInt32(comm.ExecuteScalar())*multiplier;           //คำนวณโดนเอาค่าราคาจาก DB มาคูณจำนวณ
-                p4 = price;                                                             //เอาราคาที่คำนวณแล้วไปเก็บไว้ในตัวแปล
+                p4 = price;
+                q4 = multiplier;
+                m4 = mid;                                                            //เอาราคาที่คำนวณแล้วไปเก็บไว้ในตัวแปล
                 textBox_price_4.Text = price.ToString();
 
 
@@ -342,6 +389,8 @@ namespace pizza_db
                 int multiplier = Convert.ToInt32(numericUpDown4.Value);
                 int price = Convert.ToInt32(comm.ExecuteScalar()) *multiplier;
                 p4 = price;
+                q4 = multiplier;
+                m4 = mid;
                 textBox_price_4.Text = price.ToString();
             }
             else if (size4.Text == "L")//l
@@ -354,11 +403,15 @@ namespace pizza_db
                 int multiplier = Convert.ToInt32(numericUpDown4.Value);
                 int price = Convert.ToInt32(comm.ExecuteScalar()) * multiplier;
                 p4 = price;
+                q4 = multiplier;
+                m4 = mid;
                 textBox_price_4.Text = price.ToString();
             }
             else
             {
                 p4 = 0;
+                q4 = 0;
+                m4 = 0;
             }
             ////////////////////////////////////////////////////
 

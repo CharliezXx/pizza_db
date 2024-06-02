@@ -569,7 +569,7 @@
             size11.Name = "size11";
             size11.Size = new Size(121, 23);
             size11.TabIndex = 164;
-            size11.Text = "Size";
+            size11.Text = "S";
             size11.SelectedIndexChanged += size11_SelectedIndexChanged;
             // 
             // size10
@@ -581,7 +581,7 @@
             size10.Name = "size10";
             size10.Size = new Size(121, 23);
             size10.TabIndex = 159;
-            size10.Text = "Size";
+            size10.Text = "S";
             size10.SelectedIndexChanged += size10_SelectedIndexChanged;
             // 
             // numericUpDown10
@@ -646,7 +646,7 @@
             size9.Name = "size9";
             size9.Size = new Size(121, 23);
             size9.TabIndex = 154;
-            size9.Text = "Size";
+            size9.Text = "S";
             size9.SelectedIndexChanged += size9_SelectedIndexChanged;
             // 
             // menu11
@@ -714,7 +714,7 @@
             size8.Name = "size8";
             size8.Size = new Size(121, 23);
             size8.TabIndex = 149;
-            size8.Text = "Size";
+            size8.Text = "S";
             size8.SelectedIndexChanged += size8_SelectedIndexChanged;
             // 
             // numericUpDown8
@@ -762,7 +762,7 @@
             size7.Name = "size7";
             size7.Size = new Size(121, 23);
             size7.TabIndex = 144;
-            size7.Text = "Size";
+            size7.Text = "S";
             size7.SelectedIndexChanged += size7_SelectedIndexChanged;
             // 
             // numericUpDown7
@@ -810,7 +810,7 @@
             size6.Name = "size6";
             size6.Size = new Size(121, 23);
             size6.TabIndex = 132;
-            size6.Text = "Size";
+            size6.Text = "S";
             size6.SelectedIndexChanged += size6_SelectedIndexChanged;
             // 
             // numericUpDown6
@@ -830,7 +830,7 @@
             size5.Name = "size5";
             size5.Size = new Size(121, 23);
             size5.TabIndex = 130;
-            size5.Text = "Size";
+            size5.Text = "S";
             size5.SelectedIndexChanged += size5_SelectedIndexChanged;
             // 
             // numericUpDown5
@@ -850,7 +850,7 @@
             size4.Name = "size4";
             size4.Size = new Size(121, 23);
             size4.TabIndex = 128;
-            size4.Text = "Size";
+            size4.Text = "S";
             size4.SelectedIndexChanged += size4_SelectedIndexChanged;
             // 
             // numericUpDown4
@@ -870,7 +870,7 @@
             size3.Name = "size3";
             size3.Size = new Size(121, 23);
             size3.TabIndex = 126;
-            size3.Text = "Size";
+            size3.Text = "S";
             size3.SelectedIndexChanged += size3_SelectedIndexChanged;
             // 
             // size2
@@ -882,7 +882,7 @@
             size2.Name = "size2";
             size2.Size = new Size(121, 23);
             size2.TabIndex = 125;
-            size2.Text = "Size";
+            size2.Text = "S";
             size2.SelectedIndexChanged += size2_SelectedIndexChanged;
             // 
             // numericUpDown3
@@ -910,7 +910,7 @@
             size1.Name = "size1";
             size1.Size = new Size(121, 23);
             size1.TabIndex = 122;
-            size1.Text = "Size";
+            size1.Text = "S";
             size1.SelectedIndexChanged += size1_SelectedIndexChanged;
             // 
             // numericUpDown2

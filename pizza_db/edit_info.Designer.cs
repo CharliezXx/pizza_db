@@ -208,6 +208,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.Chartreuse;
             ClientSize = new Size(466, 494);
             Controls.Add(label_lastname);
             Controls.Add(textBox_lastname);
