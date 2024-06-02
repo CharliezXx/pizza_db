@@ -33,6 +33,7 @@
             button_edit_address = new Button();
             button_get_bill = new Button();
             panel1 = new Panel();
+            label1 = new Label();
             numericUpDown18 = new NumericUpDown();
             textBox_price_18 = new TextBox();
             menu18 = new TextBox();
@@ -117,7 +118,6 @@
             menu1 = new TextBox();
             pictureBox1 = new PictureBox();
             textBox10 = new TextBox();
-            label1 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown18).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
@@ -298,6 +298,15 @@
             panel1.Size = new Size(1034, 448);
             panel1.TabIndex = 100;
             panel1.Paint += panel1_Paint;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(0, 3428);
+            label1.Name = "label1";
+            label1.Size = new Size(10, 15);
+            label1.TabIndex = 193;
+            label1.Text = "`";
             // 
             // numericUpDown18
             // 
@@ -876,6 +885,7 @@
             size1.Size = new Size(121, 23);
             size1.TabIndex = 122;
             size1.Text = "Size";
+            size1.SelectedIndexChanged += size1_SelectedIndexChanged;
             // 
             // numericUpDown2
             // 
@@ -1073,15 +1083,6 @@
             textBox10.Text = "Total price ";
             textBox10.TextAlign = HorizontalAlignment.Center;
             textBox10.TextChanged += textBox10_TextChanged;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(0, 3428);
-            label1.Name = "label1";
-            label1.Size = new Size(10, 15);
-            label1.TabIndex = 193;
-            label1.Text = "`";
             // 
             // main_page
             // 

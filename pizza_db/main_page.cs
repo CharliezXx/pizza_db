@@ -42,7 +42,7 @@ namespace pizza_db
 
             label_username.Text = "Username : " + name;
 
-
+            cal();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -74,6 +74,18 @@ namespace pizza_db
 
         private void button_get_bill_Click(object sender, EventArgs e)
         {
+            int uid = first_page.uid;
+            comm = con.CreateCommand();
+            comm.Parameters.AddWithValue("@user_id", uid);
+
+
+            // add order_id
+            comm.CommandText = "INSERT orders (customer_id)values(@user_id)";
+            int do_command = comm.ExecuteNonQuery();
+
+
+
+            // change window to basket
             this.Hide();
             basket b = new basket();
             b.ShowDialog();
@@ -96,12 +108,111 @@ namespace pizza_db
         }
         public void cal()
         {
+
+            int p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18;
             
+
+
+            if (numericUpDown1.Value == 0) //check ว่าถ้าได้เลือกซักชิ้น
+            {
+                p1 = 0;
+                textBox_price_1.Text = Convert.ToString(p1);
+            }
+            else if (size1.Text == "S")// s
+            {
+                comm = con.CreateCommand();
+
+                int mid = 1;                                                            // ดึงราคาจาก DB 
+                comm.Parameters.AddWithValue("@mid", mid);                              // 
+                comm.CommandText = "SELECT price from menu where menu_id = @mid";       //
+                
+                int multiplier = Convert.ToInt32(numericUpDown1.Value);                 //ตัวคูณ โดยจำนวนสินค้า
+                int price = Convert.ToInt32(comm.ExecuteScalar())*multiplier;           //คำนวณโดนเอาค่าราคาจาก DB มาคูณจำนวณ
+                p1 = price;                                                             //เอาราคาที่คำนวณแล้วไปเก็บไว้ในตัวแปล
+                textBox_price_1.Text = price.ToString();
+
+
+            }
+            else if (size1.Text == "M")//m
+            {
+                comm = con.CreateCommand();
+
+                int mid = 2;
+                comm.Parameters.AddWithValue("@mid", mid);
+                comm.CommandText = "SELECT price from menu where menu_id = @mid";
+                int multiplier = Convert.ToInt32(numericUpDown1.Value);
+                int price = Convert.ToInt32(comm.ExecuteScalar()) * multiplier;
+                p1 = price;
+                textBox_price_1.Text = price.ToString();
+            }
+            else if (size1.Text == "L")//l
+            {
+                comm = con.CreateCommand();
+
+                int mid = 3;
+                comm.Parameters.AddWithValue("@mid", mid);
+                comm.CommandText = "SELECT price from menu where menu_id = @mid";
+                int multiplier = Convert.ToInt32(numericUpDown1.Value);
+                int price = Convert.ToInt32(comm.ExecuteScalar()) * multiplier;
+                p1 = price;
+                textBox_price_1.Text = price.ToString();
+            }
+            ////////////////////////////////////////////////////
+
+            if (numericUpDown2.Value == 0) //check ว่าถ้าได้เลือกซักชิ้น
+            {
+                p2 = 0;
+                textBox_price_2.Text = Convert.ToString(p2);
+            }
+            else if (size2.Text == "S")// s
+            {
+                comm = con.CreateCommand();
+
+                int mid = 1;                                                            // ดึงราคาจาก DB 
+                comm.Parameters.AddWithValue("@mid", mid);                              // 
+                comm.CommandText = "SELECT price from menu where menu_id = @mid";       //
+
+                int multiplier = Convert.ToInt32(numericUpDown2.Value);                 //ตัวคูณ โดยจำนวนสินค้า
+                int price = Convert.ToInt32(comm.ExecuteScalar()) * multiplier;           //คำนวณโดนเอาค่าราคาจาก DB มาคูณจำนวณ
+                p1 = price;                                                             //เอาราคาที่คำนวณแล้วไปเก็บไว้ในตัวแปล
+                textBox_price_2.Text = price.ToString();
+
+
+            }
+            else if (size2.Text == "M")//m
+            {
+                comm = con.CreateCommand();
+
+                int mid = 2;
+                comm.Parameters.AddWithValue("@mid", mid);
+                comm.CommandText = "SELECT price from menu where menu_id = @mid";
+                int multiplier = Convert.ToInt32(numericUpDown2.Value);
+                int price = Convert.ToInt32(comm.ExecuteScalar()) * multiplier;
+                p1 = price;
+                textBox_price_2.Text = price.ToString();
+            }
+            else if (size2.Text == "L")//l
+            {
+                comm = con.CreateCommand();
+
+                int mid = 3;
+                comm.Parameters.AddWithValue("@mid", mid);
+                comm.CommandText = "SELECT price from menu where menu_id = @mid";
+                int multiplier = Convert.ToInt32(numericUpDown2.Value);
+                int price = Convert.ToInt32(comm.ExecuteScalar()) * multiplier;
+                p1 = price;
+                textBox_price_2.Text = price.ToString();
+            }
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            //textBox_price_1.Text = numericUpDown1.Value;
+            cal();
+        }
+
+        private void size1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cal();
         }
     }
 }
