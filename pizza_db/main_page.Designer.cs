@@ -314,6 +314,7 @@
             numericUpDown18.Name = "numericUpDown18";
             numericUpDown18.Size = new Size(82, 23);
             numericUpDown18.TabIndex = 192;
+            numericUpDown18.ValueChanged += numericUpDown18_ValueChanged;
             // 
             // textBox_price_18
             // 
@@ -349,6 +350,7 @@
             numericUpDown17.Name = "numericUpDown17";
             numericUpDown17.Size = new Size(82, 23);
             numericUpDown17.TabIndex = 188;
+            numericUpDown17.ValueChanged += numericUpDown17_ValueChanged;
             // 
             // textBox_price_17
             // 
@@ -384,6 +386,7 @@
             numericUpDown16.Name = "numericUpDown16";
             numericUpDown16.Size = new Size(82, 23);
             numericUpDown16.TabIndex = 184;
+            numericUpDown16.ValueChanged += numericUpDown16_ValueChanged;
             // 
             // textBox_price_16
             // 
@@ -419,6 +422,7 @@
             numericUpDown15.Name = "numericUpDown15";
             numericUpDown15.Size = new Size(82, 23);
             numericUpDown15.TabIndex = 180;
+            numericUpDown15.ValueChanged += numericUpDown15_ValueChanged;
             // 
             // textBox_price_15
             // 
@@ -454,6 +458,7 @@
             numericUpDown14.Name = "numericUpDown14";
             numericUpDown14.Size = new Size(82, 23);
             numericUpDown14.TabIndex = 176;
+            numericUpDown14.ValueChanged += numericUpDown14_ValueChanged;
             // 
             // textBox_price_14
             // 
@@ -489,6 +494,7 @@
             numericUpDown13.Name = "numericUpDown13";
             numericUpDown13.Size = new Size(82, 23);
             numericUpDown13.TabIndex = 172;
+            numericUpDown13.ValueChanged += numericUpDown13_ValueChanged;
             // 
             // textBox_price_13
             // 
@@ -524,6 +530,7 @@
             numericUpDown12.Name = "numericUpDown12";
             numericUpDown12.Size = new Size(82, 23);
             numericUpDown12.TabIndex = 168;
+            numericUpDown12.ValueChanged += numericUpDown12_ValueChanged;
             // 
             // textBox_price_12
             // 
@@ -563,6 +570,7 @@
             size11.Size = new Size(121, 23);
             size11.TabIndex = 164;
             size11.Text = "Size";
+            size11.SelectedIndexChanged += size11_SelectedIndexChanged;
             // 
             // size10
             // 
@@ -574,6 +582,7 @@
             size10.Size = new Size(121, 23);
             size10.TabIndex = 159;
             size10.Text = "Size";
+            size10.SelectedIndexChanged += size10_SelectedIndexChanged;
             // 
             // numericUpDown10
             // 
@@ -581,6 +590,7 @@
             numericUpDown10.Name = "numericUpDown10";
             numericUpDown10.Size = new Size(82, 23);
             numericUpDown10.TabIndex = 158;
+            numericUpDown10.ValueChanged += numericUpDown10_ValueChanged;
             // 
             // numericUpDown11
             // 
@@ -588,6 +598,7 @@
             numericUpDown11.Name = "numericUpDown11";
             numericUpDown11.Size = new Size(82, 23);
             numericUpDown11.TabIndex = 163;
+            numericUpDown11.ValueChanged += numericUpDown11_ValueChanged;
             // 
             // textBox_price_10
             // 
@@ -636,6 +647,7 @@
             size9.Size = new Size(121, 23);
             size9.TabIndex = 154;
             size9.Text = "Size";
+            size9.SelectedIndexChanged += size9_SelectedIndexChanged;
             // 
             // menu11
             // 
@@ -653,6 +665,7 @@
             numericUpDown9.Name = "numericUpDown9";
             numericUpDown9.Size = new Size(82, 23);
             numericUpDown9.TabIndex = 153;
+            numericUpDown9.ValueChanged += numericUpDown9_ValueChanged;
             // 
             // textBox_price_9
             // 
@@ -702,6 +715,7 @@
             size8.Size = new Size(121, 23);
             size8.TabIndex = 149;
             size8.Text = "Size";
+            size8.SelectedIndexChanged += size8_SelectedIndexChanged;
             // 
             // numericUpDown8
             // 
@@ -709,6 +723,7 @@
             numericUpDown8.Name = "numericUpDown8";
             numericUpDown8.Size = new Size(82, 23);
             numericUpDown8.TabIndex = 148;
+            numericUpDown8.ValueChanged += numericUpDown8_ValueChanged;
             // 
             // textBox_price_8
             // 
@@ -748,6 +763,7 @@
             size7.Size = new Size(121, 23);
             size7.TabIndex = 144;
             size7.Text = "Size";
+            size7.SelectedIndexChanged += size7_SelectedIndexChanged;
             // 
             // numericUpDown7
             // 
@@ -755,6 +771,7 @@
             numericUpDown7.Name = "numericUpDown7";
             numericUpDown7.Size = new Size(82, 23);
             numericUpDown7.TabIndex = 143;
+            numericUpDown7.ValueChanged += numericUpDown7_ValueChanged;
             // 
             // textBox_price_7
             // 
@@ -794,6 +811,7 @@
             size6.Size = new Size(121, 23);
             size6.TabIndex = 132;
             size6.Text = "Size";
+            size6.SelectedIndexChanged += size6_SelectedIndexChanged;
             // 
             // numericUpDown6
             // 
@@ -801,6 +819,7 @@
             numericUpDown6.Name = "numericUpDown6";
             numericUpDown6.Size = new Size(82, 23);
             numericUpDown6.TabIndex = 131;
+            numericUpDown6.ValueChanged += numericUpDown6_ValueChanged;
             // 
             // size5
             // 
@@ -812,6 +831,7 @@
             size5.Size = new Size(121, 23);
             size5.TabIndex = 130;
             size5.Text = "Size";
+            size5.SelectedIndexChanged += size5_SelectedIndexChanged;
             // 
             // numericUpDown5
             // 
@@ -819,6 +839,7 @@
             numericUpDown5.Name = "numericUpDown5";
             numericUpDown5.Size = new Size(82, 23);
             numericUpDown5.TabIndex = 129;
+            numericUpDown5.ValueChanged += numericUpDown5_ValueChanged;
             // 
             // size4
             // 

@@ -23,7 +23,11 @@ namespace pizza_db
 
         private void button_cancel_Click(object sender, EventArgs e)
         {
-            
+            int uid = first_page.uid;
+
+            comm.Parameters.AddWithValue("@u_id",uid);
+            comm.CommandText = "DELETE FROM orders WHERE customer_id = @u_id";
+            int del = comm.ExecuteNonQuery();
             this.Hide();
             main_page mp = new main_page();
             mp.ShowDialog();
@@ -32,7 +36,7 @@ namespace pizza_db
         private void load_basket_griddata_init()
         {
 
-            string sql = "SELECT pizza_proj.menu.menu_name, size, pizza_proj.in_basket.quantity, pizza_proj.menu.price\r\nFROM pizza_proj.menu RIGHT JOIN pizza_proj.in_basket \r\nON pizza_proj.menu.menu_id = pizza_proj.in_basket.menu_id";
+            string sql = "SELECT pizza_proj.menu.menu_name, size, pizza_proj.in_basket.quantity, pizza_proj.menu.price\r\nFROM pizza_proj.menu RIGHT JOIN pizza_proj.in_basket \r\nON pizza_proj.menu.menu_id = pizza_proj.in_basket.menu_id where o_id";
             comm = new MySqlCommand(sql, con);
             DataSet ds = new DataSet();
             MySqlDataAdapter da = new MySqlDataAdapter(comm);
