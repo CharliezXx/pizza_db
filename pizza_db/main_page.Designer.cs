@@ -830,6 +830,7 @@
             size4.Size = new Size(121, 23);
             size4.TabIndex = 128;
             size4.Text = "Size";
+            size4.SelectedIndexChanged += size4_SelectedIndexChanged;
             // 
             // numericUpDown4
             // 
@@ -837,6 +838,7 @@
             numericUpDown4.Name = "numericUpDown4";
             numericUpDown4.Size = new Size(82, 23);
             numericUpDown4.TabIndex = 127;
+            numericUpDown4.ValueChanged += numericUpDown4_ValueChanged;
             // 
             // size3
             // 
@@ -848,6 +850,7 @@
             size3.Size = new Size(121, 23);
             size3.TabIndex = 126;
             size3.Text = "Size";
+            size3.SelectedIndexChanged += size3_SelectedIndexChanged;
             // 
             // size2
             // 
@@ -859,6 +862,7 @@
             size2.Size = new Size(121, 23);
             size2.TabIndex = 125;
             size2.Text = "Size";
+            size2.SelectedIndexChanged += size2_SelectedIndexChanged;
             // 
             // numericUpDown3
             // 
@@ -866,6 +870,7 @@
             numericUpDown3.Name = "numericUpDown3";
             numericUpDown3.Size = new Size(82, 23);
             numericUpDown3.TabIndex = 124;
+            numericUpDown3.ValueChanged += numericUpDown3_ValueChanged;
             // 
             // numericUpDown1
             // 
@@ -893,6 +898,7 @@
             numericUpDown2.Name = "numericUpDown2";
             numericUpDown2.Size = new Size(82, 23);
             numericUpDown2.TabIndex = 121;
+            numericUpDown2.ValueChanged += numericUpDown2_ValueChanged;
             // 
             // textBox_price_6
             // 
