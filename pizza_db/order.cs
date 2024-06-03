@@ -63,6 +63,7 @@ namespace pizza_db
             
             comm.CommandText = "SELECT e_lastname from employee where position = 'admin'";
             string e_lname = Convert.ToString(comm.ExecuteScalar());
+            
 
             label7.Text = "Take order by : "+e_fname+" "+e_lname;
             
@@ -72,8 +73,10 @@ namespace pizza_db
             random_driver();
             void random_driver()
             {
+                comm.CommandText = "select max(e_id) from employee";
+                int max_emp = Convert.ToInt32(comm.ExecuteScalar());
                 Random rng = new Random();
-                int rand2 = rng.Next(3, 7);
+                int rand2 = rng.Next(3, max_emp+1);
 
                 comm = con.CreateCommand();
                 comm.Parameters.AddWithValue("@random", rand2);

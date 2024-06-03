@@ -84,7 +84,7 @@ namespace pizza_db
             else if (textBox_name_firstpage.Text == "admin" && textBox_password_firstpage.Text == "admin")
             {
                 this.Hide();
-                status_admin o = new status_admin();
+                admin_page o = new admin_page();
                 o.ShowDialog();
                 this.Close();
             }
