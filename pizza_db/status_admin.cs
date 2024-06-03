@@ -31,7 +31,7 @@ namespace pizza_db
 
         private void status_admin_Load(object sender, EventArgs e)
         {
-            o
+            
 
             // Load data into guna2DataGridView1
             string sql = "SELECT * from orders";
@@ -41,47 +41,59 @@ namespace pizza_db
             da.Fill(ds, "orders");
             guna2DataGridView1.DataSource = ds.Tables["orders"].DefaultView;
 
-            // Attach DataBindingComplete event handler
-            guna2DataGridView1.DataBindingComplete += Guna2DataGridView1_DataBindingComplete;
 
             // Load data into guna2DataGridView2
-            MySqlCommand comm2 = con.CreateCommand();
-            comm2.CommandText = "SELECT * from addr";
+            comm = con.CreateCommand();
+            comm.CommandText = "SELECT * from addr";
             DataSet ds2 = new DataSet();
-            MySqlDataAdapter da2 = new MySqlDataAdapter(comm2);
+            MySqlDataAdapter da2 = new MySqlDataAdapter(comm);
             da2.Fill(ds2, "addr");
             guna2DataGridView2.DataSource = ds2.Tables["addr"].DefaultView;
 
-            // Attach DataBindingComplete event handler
-            guna2DataGridView2.DataBindingComplete += Guna2DataGridView2_DataBindingComplete;
+            
 
-            // Load data into guna2DataGridView3 (for employee table)
-           
-        }
+            comm = con.CreateCommand();
+            comm.CommandText = "SELECT * from customer";
+            DataSet ds3 = new DataSet();
+            MySqlDataAdapter da3 = new MySqlDataAdapter(comm);
+            da3.Fill(ds3, "customer");
+            guna2DataGridView3.DataSource = ds3.Tables["customer"].DefaultView;
 
-        private void Guna2DataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
-        {
-            guna2DataGridView1.Columns[0].Width = 150;
-            guna2DataGridView1.Columns[1].Width = 150;
-            guna2DataGridView1.Columns[2].Width = 150;
-            guna2DataGridView1.Columns[3].Width = 150;
-            guna2DataGridView1.Columns[4].Width = 150;
-        }
 
-        private void Guna2DataGridView2_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
-        {
-            guna2DataGridView2.Columns[0].Width = 125;
-            guna2DataGridView2.Columns[1].Width = 125;
-            guna2DataGridView2.Columns[2].Width = 125;
-            guna2DataGridView2.Columns[3].Width = 125;
-            guna2DataGridView2.Columns[4].Width = 125;
-            guna2DataGridView2.Columns[5].Width = 125;
+            comm = con.CreateCommand();
+            comm.CommandText = "SELECT * from employee";
+            DataSet ds4 = new DataSet();
+            MySqlDataAdapter da4 = new MySqlDataAdapter(comm);
+            da4.Fill(ds4, "employee");
+            guna2DataGridView4.DataSource = ds4.Tables["employee"].DefaultView;
+
+            comm = con.CreateCommand();
+            comm.CommandText = "SELECT * from vehicle";
+            DataSet ds5 = new DataSet();
+            MySqlDataAdapter da5 = new MySqlDataAdapter(comm);
+            da5.Fill(ds5, "vehicle");
+            guna2DataGridView5.DataSource = ds5.Tables["vehicle"].DefaultView;
+
+            comm = con.CreateCommand();
+            comm.CommandText = "SELECT * from menu";
+            DataSet ds6 = new DataSet();
+            MySqlDataAdapter da6 = new MySqlDataAdapter(comm);
+            da6.Fill(ds6, "menu");
+            guna2DataGridView6.DataSource = ds6.Tables["menu"].DefaultView;
+
+            comm = con.CreateCommand();
+            comm.CommandText = "SELECT * from in_basket";
+            DataSet ds7 = new DataSet();
+            MySqlDataAdapter da7 = new MySqlDataAdapter(comm);
+            da7.Fill(ds7, "in_basket");
+            guna2DataGridView7.DataSource = ds7.Tables["in_basket"].DefaultView;
+
         }
 
         
         private void guna2DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           
         }
 
         private void address_Click(object sender, EventArgs e)
