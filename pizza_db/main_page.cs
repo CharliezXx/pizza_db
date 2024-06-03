@@ -92,41 +92,52 @@ namespace pizza_db
         {
 
         }
-
+        public static decimal TTP;
         private void button_get_bill_Click(object sender, EventArgs e)
         {
-            int uid = first_page.uid;
             decimal tp = cal();
-            comm = con.CreateCommand();
-            comm.Parameters.AddWithValue("@user_id", uid);
-            comm.Parameters.AddWithValue("@total_price",tp);
-
-            // add order_id
-            comm.CommandText = "INSERT orders (customer_id,total_price)values(@user_id,@total_price)";
-            int do_command = comm.ExecuteNonQuery();
-
-
-            int[] quantities = { q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18 };
-            int[] menuIds = { m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18 };
-
-            for (int i = 0; i < quantities.Length; i++)
+            TTP = tp;
+            if (tp > 0)
             {
-                if (quantities[i] != 0)
+                int uid = first_page.uid;
+                
+                comm = con.CreateCommand();
+                comm.Parameters.AddWithValue("@user_id", uid);
+                comm.Parameters.AddWithValue("@total_price", tp);
+
+
+                // add order_id
+                comm.CommandText = "INSERT orders (customer_id,total_price)values(@user_id,@total_price)";
+                int do_command = comm.ExecuteNonQuery();
+
+
+                int[] quantities = { q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18 };
+                int[] menuIds = { m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18 };
+
+                for (int i = 0; i < quantities.Length; i++)
                 {
-                    comm.Parameters.Clear();
-                    comm.Parameters.AddWithValue($"@quan{i + 1}", quantities[i]);
-                    comm.Parameters.AddWithValue($"@mid{i + 1}", menuIds[i]);
-                    comm.CommandText = $"INSERT INTO pizza_proj.in_basket (quantity, menu_id) VALUES(@quan{i + 1}, @mid{i + 1}) ON DUPLICATE KEY UPDATE quantity = @quan{i + 1}, menu_id = @mid{i + 1}";
-                    do_command = comm.ExecuteNonQuery();
+                    if (quantities[i] != 0)
+                    {
+                        comm.Parameters.Clear();
+                        comm.Parameters.AddWithValue($"@quan{i + 1}", quantities[i]);
+                        comm.Parameters.AddWithValue($"@mid{i + 1}", menuIds[i]);
+                        comm.CommandText = $"INSERT INTO pizza_proj.in_basket (quantity, menu_id) VALUES(@quan{i + 1}, @mid{i + 1}) ON DUPLICATE KEY UPDATE quantity = @quan{i + 1}, menu_id = @mid{i + 1}";
+                        do_command = comm.ExecuteNonQuery();
+                    }
                 }
+
+
+                // change window to basket
+                this.Hide();
+                basket b = new basket();
+                b.ShowDialog();
+                this.Close();
             }
-
-
-            // change window to basket
-            this.Hide();
-            basket b = new basket();
-            b.ShowDialog();
-            this.Close();
+            else
+            {
+                MessageBox.Show("Plz Buy Something!");
+            }
+                
         }
 
         private void menu6_TextChanged(object sender, EventArgs e)

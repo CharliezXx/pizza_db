@@ -46,7 +46,6 @@ namespace pizza_db
             DataSet ds = new DataSet();
             MySqlDataAdapter da = new MySqlDataAdapter(comm);
             da.Fill(ds, "in_basket");
-
             basketDataGridView.DataSource = ds.Tables["in_basket"].DefaultView;
             basketDataGridView.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
             basketDataGridView.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
@@ -66,7 +65,10 @@ namespace pizza_db
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            order o = new order();
+            o.ShowDialog();
+            this.Close();
         }
 
         private void label3_Click(object sender, EventArgs e)

@@ -42,10 +42,10 @@
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             label1 = new Label();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
             label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)basketDataGridView).BeginInit();
             guna2CustomGradientPanel1.SuspendLayout();
             SuspendLayout();
@@ -139,10 +139,10 @@
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button1.Font = new Font("Segoe UI", 9F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(341, 438);
+            guna2Button1.Location = new Point(342, 436);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button1.Size = new Size(180, 45);
+            guna2Button1.Size = new Size(187, 57);
             guna2Button1.TabIndex = 2;
             guna2Button1.Text = "Get bill";
             guna2Button1.Click += guna2Button1_Click;
@@ -161,6 +161,7 @@
             // guna2CustomGradientPanel1
             // 
             guna2CustomGradientPanel1.Controls.Add(label5);
+            guna2CustomGradientPanel1.Controls.Add(guna2Button1);
             guna2CustomGradientPanel1.Controls.Add(label4);
             guna2CustomGradientPanel1.Controls.Add(label3);
             guna2CustomGradientPanel1.Controls.Add(label2);
@@ -175,24 +176,15 @@
             guna2CustomGradientPanel1.Size = new Size(559, 529);
             guna2CustomGradientPanel1.TabIndex = 4;
             // 
-            // label2
+            // label5
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(50, 92);
-            label2.Name = "label2";
-            label2.Size = new Size(39, 15);
-            label2.TabIndex = 0;
-            label2.Text = "Name";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(171, 92);
-            label3.Name = "label3";
-            label3.Size = new Size(27, 15);
-            label3.TabIndex = 0;
-            label3.Text = "Size";
-            label3.Click += label3_Click;
+            label5.AutoSize = true;
+            label5.Location = new Point(485, 92);
+            label5.Name = "label5";
+            label5.Size = new Size(31, 15);
+            label5.TabIndex = 0;
+            label5.Text = "Cost";
+            label5.Click += label3_Click;
             // 
             // label4
             // 
@@ -204,15 +196,24 @@
             label4.Text = "Quantities";
             label4.Click += label3_Click;
             // 
-            // label5
+            // label3
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(485, 92);
-            label5.Name = "label5";
-            label5.Size = new Size(31, 15);
-            label5.TabIndex = 0;
-            label5.Text = "Cost";
-            label5.Click += label3_Click;
+            label3.AutoSize = true;
+            label3.Location = new Point(171, 92);
+            label3.Name = "label3";
+            label3.Size = new Size(27, 15);
+            label3.TabIndex = 0;
+            label3.Text = "Size";
+            label3.Click += label3_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(50, 92);
+            label2.Name = "label2";
+            label2.Size = new Size(39, 15);
+            label2.TabIndex = 0;
+            label2.Text = "Name";
             // 
             // basket
             // 
@@ -222,7 +223,6 @@
             BackColor = Color.DarkCyan;
             ClientSize = new Size(546, 514);
             Controls.Add(label1);
-            Controls.Add(guna2Button1);
             Controls.Add(basketDataGridView);
             Controls.Add(button_cancel);
             Controls.Add(guna2CustomGradientPanel1);

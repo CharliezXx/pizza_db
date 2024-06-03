@@ -145,7 +145,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            BackColor = Color.Coral;
+            BackColor = Color.BlanchedAlmond;
             ClientSize = new Size(524, 361);
             Controls.Add(error_first_page);
             Controls.Add(checkBox_showpass_login);
