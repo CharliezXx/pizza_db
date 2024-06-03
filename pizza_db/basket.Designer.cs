@@ -40,6 +40,7 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)basketDataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -179,6 +180,17 @@
             label5.TabIndex = 7;
             label5.Text = "QUANTITY";
             // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button1.Location = new Point(322, 426);
+            button1.Name = "button1";
+            button1.Size = new Size(199, 57);
+            button1.TabIndex = 8;
+            button1.Text = "Go to bill";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += guna2Button1_Click;
+            // 
             // basket
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -186,6 +198,7 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.DarkCyan;
             ClientSize = new Size(546, 514);
+            Controls.Add(button1);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -214,5 +227,6 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Button button1;
     }
 }

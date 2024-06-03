@@ -175,8 +175,8 @@
             // 
             label_username.AutoSize = true;
             label_username.Font = new Font("Tahoma", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_username.ForeColor = SystemColors.ButtonHighlight;
-            label_username.Location = new Point(28, 14);
+            label_username.ForeColor = Color.Yellow;
+            label_username.Location = new Point(28, 9);
             label_username.Name = "label_username";
             label_username.Size = new Size(179, 39);
             label_username.TabIndex = 2;
@@ -186,6 +186,7 @@
             // button_logout
             // 
             button_logout.BackColor = Color.Yellow;
+            button_logout.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button_logout.Location = new Point(996, 55);
             button_logout.Margin = new Padding(3, 2, 3, 2);
             button_logout.Name = "button_logout";
@@ -198,6 +199,7 @@
             // button_edit_address
             // 
             button_edit_address.BackColor = Color.Yellow;
+            button_edit_address.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button_edit_address.Location = new Point(30, 55);
             button_edit_address.Margin = new Padding(3, 2, 3, 2);
             button_edit_address.Name = "button_edit_address";
@@ -210,6 +212,7 @@
             // button_get_bill
             // 
             button_get_bill.BackColor = Color.Yellow;
+            button_get_bill.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button_get_bill.Location = new Point(862, 591);
             button_get_bill.Name = "button_get_bill";
             button_get_bill.Size = new Size(200, 65);
@@ -275,6 +278,7 @@
             panel1.Controls.Add(menu1);
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Fill;
+            panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(1020, 427);
@@ -286,7 +290,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(-5, 1886);
             label1.Name = "label1";
-            label1.Size = new Size(10, 15);
+            label1.Size = new Size(11, 15);
             label1.TabIndex = 193;
             label1.Text = "`";
             // 
@@ -312,8 +316,10 @@
             // 
             // textBox_price_10
             // 
+            textBox_price_10.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox_price_10.Location = new Point(838, 1849);
             textBox_price_10.Name = "textBox_price_10";
+            textBox_price_10.ReadOnly = true;
             textBox_price_10.Size = new Size(100, 23);
             textBox_price_10.TabIndex = 157;
             textBox_price_10.Text = "PRICE";
@@ -321,8 +327,10 @@
             // 
             // menu10
             // 
+            menu10.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             menu10.Location = new Point(610, 1821);
             menu10.Name = "menu10";
+            menu10.ReadOnly = true;
             menu10.Size = new Size(354, 23);
             menu10.TabIndex = 156;
             menu10.Text = "Pizza Spinach Cheese";
@@ -360,8 +368,10 @@
             // 
             // textBox_price_9
             // 
+            textBox_price_9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox_price_9.Location = new Point(316, 1850);
             textBox_price_9.Name = "textBox_price_9";
+            textBox_price_9.ReadOnly = true;
             textBox_price_9.Size = new Size(100, 23);
             textBox_price_9.TabIndex = 152;
             textBox_price_9.Text = "PRICE";
@@ -369,8 +379,10 @@
             // 
             // menu9
             // 
+            menu9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             menu9.Location = new Point(84, 1821);
             menu9.Name = "menu9";
+            menu9.ReadOnly = true;
             menu9.Size = new Size(354, 23);
             menu9.TabIndex = 151;
             menu9.Text = "Pizza Hawaiian";
@@ -408,8 +420,10 @@
             // 
             // textBox_price_8
             // 
+            textBox_price_8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox_price_8.Location = new Point(838, 1476);
             textBox_price_8.Name = "textBox_price_8";
+            textBox_price_8.ReadOnly = true;
             textBox_price_8.Size = new Size(100, 23);
             textBox_price_8.TabIndex = 147;
             textBox_price_8.Text = "PRICE";
@@ -417,8 +431,10 @@
             // 
             // menu8
             // 
+            menu8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             menu8.Location = new Point(610, 1446);
             menu8.Name = "menu8";
+            menu8.ReadOnly = true;
             menu8.Size = new Size(354, 23);
             menu8.TabIndex = 146;
             menu8.Text = "Pizza Massaman";
@@ -456,8 +472,10 @@
             // 
             // textBox_price_7
             // 
+            textBox_price_7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox_price_7.Location = new Point(316, 1476);
             textBox_price_7.Name = "textBox_price_7";
+            textBox_price_7.ReadOnly = true;
             textBox_price_7.Size = new Size(100, 23);
             textBox_price_7.TabIndex = 141;
             textBox_price_7.Text = "PRICE";
@@ -465,8 +483,10 @@
             // 
             // menu7
             // 
+            menu7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             menu7.Location = new Point(88, 1446);
             menu7.Name = "menu7";
+            menu7.ReadOnly = true;
             menu7.Size = new Size(354, 23);
             menu7.TabIndex = 140;
             menu7.Text = "Pizza Pork Parade";
@@ -604,8 +624,10 @@
             // 
             // textBox_price_6
             // 
+            textBox_price_6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox_price_6.Location = new Point(842, 1099);
             textBox_price_6.Name = "textBox_price_6";
+            textBox_price_6.ReadOnly = true;
             textBox_price_6.Size = new Size(100, 23);
             textBox_price_6.TabIndex = 119;
             textBox_price_6.Text = "PRICE";
@@ -613,8 +635,10 @@
             // 
             // menu6
             // 
+            menu6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             menu6.Location = new Point(610, 1070);
             menu6.Name = "menu6";
+            menu6.ReadOnly = true;
             menu6.Size = new Size(354, 23);
             menu6.TabIndex = 118;
             menu6.Text = "Pizza Tomyum Seafood";
@@ -633,8 +657,10 @@
             // 
             // textBox_price_4
             // 
+            textBox_price_4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox_price_4.Location = new Point(842, 725);
             textBox_price_4.Name = "textBox_price_4";
+            textBox_price_4.ReadOnly = true;
             textBox_price_4.Size = new Size(100, 23);
             textBox_price_4.TabIndex = 115;
             textBox_price_4.Text = "PRICE";
@@ -642,8 +668,10 @@
             // 
             // menu4
             // 
+            menu4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             menu4.Location = new Point(610, 696);
             menu4.Name = "menu4";
+            menu4.ReadOnly = true;
             menu4.Size = new Size(354, 23);
             menu4.TabIndex = 114;
             menu4.Text = "Pizza Sausage Island";
@@ -661,8 +689,10 @@
             // 
             // textBox_price_2
             // 
+            textBox_price_2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox_price_2.Location = new Point(842, 347);
             textBox_price_2.Name = "textBox_price_2";
+            textBox_price_2.ReadOnly = true;
             textBox_price_2.Size = new Size(100, 23);
             textBox_price_2.TabIndex = 111;
             textBox_price_2.Text = "PRICE";
@@ -670,6 +700,7 @@
             // 
             // menu2
             // 
+            menu2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             menu2.Location = new Point(610, 318);
             menu2.Name = "menu2";
             menu2.ReadOnly = true;
@@ -694,6 +725,7 @@
             // 
             textBox_price_5.Location = new Point(316, 1099);
             textBox_price_5.Name = "textBox_price_5";
+            textBox_price_5.ReadOnly = true;
             textBox_price_5.Size = new Size(100, 23);
             textBox_price_5.TabIndex = 107;
             textBox_price_5.Text = "PRICE";
@@ -701,8 +733,10 @@
             // 
             // menu5
             // 
+            menu5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             menu5.Location = new Point(88, 1072);
             menu5.Name = "menu5";
+            menu5.ReadOnly = true;
             menu5.Size = new Size(354, 23);
             menu5.TabIndex = 106;
             menu5.Text = "Pizza Seafood";
@@ -720,8 +754,10 @@
             // 
             // textBox_price_3
             // 
+            textBox_price_3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox_price_3.Location = new Point(316, 725);
             textBox_price_3.Name = "textBox_price_3";
+            textBox_price_3.ReadOnly = true;
             textBox_price_3.Size = new Size(100, 23);
             textBox_price_3.TabIndex = 103;
             textBox_price_3.Text = "PRICE";
@@ -729,8 +765,10 @@
             // 
             // menu3
             // 
+            menu3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             menu3.Location = new Point(88, 696);
             menu3.Name = "menu3";
+            menu3.ReadOnly = true;
             menu3.Size = new Size(354, 23);
             menu3.TabIndex = 102;
             menu3.Text = "Pizza Chicken Duo";
@@ -750,6 +788,7 @@
             // 
             // textBox_price_1
             // 
+            textBox_price_1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox_price_1.Location = new Point(316, 348);
             textBox_price_1.Name = "textBox_price_1";
             textBox_price_1.ReadOnly = true;
@@ -760,6 +799,7 @@
             // 
             // menu1
             // 
+            menu1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             menu1.Location = new Point(88, 319);
             menu1.Name = "menu1";
             menu1.ReadOnly = true;
@@ -784,8 +824,10 @@
             // textBox10
             // 
             textBox10.BackColor = Color.Yellow;
+            textBox10.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             textBox10.Location = new Point(726, 613);
             textBox10.Name = "textBox10";
+            textBox10.ReadOnly = true;
             textBox10.Size = new Size(122, 23);
             textBox10.TabIndex = 99;
             textBox10.Text = "Total price ";
@@ -797,6 +839,7 @@
             tabControl1.Controls.Add(Pizza);
             tabControl1.Controls.Add(Side_dish);
             tabControl1.Controls.Add(Drink);
+            tabControl1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             tabControl1.Location = new Point(28, 115);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
@@ -865,6 +908,7 @@
             // 
             textBox_price_17.Location = new Point(794, 734);
             textBox_price_17.Name = "textBox_price_17";
+            textBox_price_17.ReadOnly = true;
             textBox_price_17.Size = new Size(100, 23);
             textBox_price_17.TabIndex = 209;
             textBox_price_17.Text = "PRICE";
@@ -874,6 +918,7 @@
             // 
             menu17.Location = new Point(566, 706);
             menu17.Name = "menu17";
+            menu17.ReadOnly = true;
             menu17.Size = new Size(354, 23);
             menu17.TabIndex = 208;
             menu17.Text = "Vegetable salad";
@@ -901,6 +946,7 @@
             // 
             textBox_price_16.Location = new Point(312, 734);
             textBox_price_16.Name = "textBox_price_16";
+            textBox_price_16.ReadOnly = true;
             textBox_price_16.Size = new Size(100, 23);
             textBox_price_16.TabIndex = 205;
             textBox_price_16.Text = "PRICE";
@@ -910,6 +956,7 @@
             // 
             menu16.Location = new Point(84, 706);
             menu16.Name = "menu16";
+            menu16.ReadOnly = true;
             menu16.Size = new Size(354, 23);
             menu16.TabIndex = 204;
             menu16.Text = "New Orleans Fried Chicken";
@@ -937,6 +984,7 @@
             // 
             textBox_price_15.Location = new Point(794, 347);
             textBox_price_15.Name = "textBox_price_15";
+            textBox_price_15.ReadOnly = true;
             textBox_price_15.Size = new Size(100, 23);
             textBox_price_15.TabIndex = 201;
             textBox_price_15.Text = "PRICE";
@@ -946,6 +994,7 @@
             // 
             menu15.Location = new Point(566, 319);
             menu15.Name = "menu15";
+            menu15.ReadOnly = true;
             menu15.Size = new Size(354, 23);
             menu15.TabIndex = 200;
             menu15.Text = "Spaghetti";
@@ -985,6 +1034,7 @@
             // 
             textBox_price_11.Location = new Point(318, 347);
             textBox_price_11.Name = "textBox_price_11";
+            textBox_price_11.ReadOnly = true;
             textBox_price_11.Size = new Size(100, 23);
             textBox_price_11.TabIndex = 196;
             textBox_price_11.Text = "PRICE";
@@ -994,6 +1044,7 @@
             // 
             menu11.Location = new Point(90, 319);
             menu11.Name = "menu11";
+            menu11.ReadOnly = true;
             menu11.Size = new Size(354, 23);
             menu11.TabIndex = 195;
             menu11.Text = "French Fries";
@@ -1014,7 +1065,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(-4, 772);
             label2.Name = "label2";
-            label2.Size = new Size(10, 15);
+            label2.Size = new Size(11, 15);
             label2.TabIndex = 193;
             label2.Text = "`";
             // 
@@ -1069,6 +1120,7 @@
             // 
             textBox_price_18.Location = new Point(789, 721);
             textBox_price_18.Name = "textBox_price_18";
+            textBox_price_18.ReadOnly = true;
             textBox_price_18.Size = new Size(100, 23);
             textBox_price_18.TabIndex = 208;
             textBox_price_18.Text = "PRICE";
@@ -1078,6 +1130,7 @@
             // 
             menu18.Location = new Point(561, 693);
             menu18.Name = "menu18";
+            menu18.ReadOnly = true;
             menu18.Size = new Size(354, 23);
             menu18.TabIndex = 207;
             menu18.Text = "Water";
@@ -1105,6 +1158,7 @@
             // 
             textBox_price_14.Location = new Point(312, 721);
             textBox_price_14.Name = "textBox_price_14";
+            textBox_price_14.ReadOnly = true;
             textBox_price_14.Size = new Size(100, 23);
             textBox_price_14.TabIndex = 204;
             textBox_price_14.Text = "PRICE";
@@ -1114,6 +1168,7 @@
             // 
             menu14.Location = new Point(84, 693);
             menu14.Name = "menu14";
+            menu14.ReadOnly = true;
             menu14.Size = new Size(354, 23);
             menu14.TabIndex = 203;
             menu14.Text = "Pepsi can 245 ml";
@@ -1141,6 +1196,7 @@
             // 
             textBox_price_12.Location = new Point(793, 347);
             textBox_price_12.Name = "textBox_price_12";
+            textBox_price_12.ReadOnly = true;
             textBox_price_12.Size = new Size(100, 23);
             textBox_price_12.TabIndex = 200;
             textBox_price_12.Text = "PRICE";
@@ -1150,6 +1206,7 @@
             // 
             menu12.Location = new Point(565, 319);
             menu12.Name = "menu12";
+            menu12.ReadOnly = true;
             menu12.Size = new Size(354, 23);
             menu12.TabIndex = 199;
             menu12.Text = "pepsi 1 L";
@@ -1177,6 +1234,7 @@
             // 
             textBox_price_13.Location = new Point(316, 347);
             textBox_price_13.Name = "textBox_price_13";
+            textBox_price_13.ReadOnly = true;
             textBox_price_13.Size = new Size(100, 23);
             textBox_price_13.TabIndex = 196;
             textBox_price_13.Text = "PRICE";
@@ -1186,6 +1244,7 @@
             // 
             menu13.Location = new Point(88, 319);
             menu13.Name = "menu13";
+            menu13.ReadOnly = true;
             menu13.Size = new Size(354, 23);
             menu13.TabIndex = 195;
             menu13.Text = "pepsi 410 ml";
@@ -1206,7 +1265,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(-5, 783);
             label3.Name = "label3";
-            label3.Size = new Size(10, 15);
+            label3.Size = new Size(11, 15);
             label3.TabIndex = 193;
             label3.Text = "`";
             // 
