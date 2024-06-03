@@ -73,10 +73,10 @@ namespace pizza_db
             random_driver();
             void random_driver()
             {
-                comm.CommandText = "select max(e_id) from employee";
-                int max_emp = Convert.ToInt32(comm.ExecuteScalar());
+                //comm.CommandText = "select max(e_id) from employee";
+                //int max_emp = Convert.ToInt32(comm.ExecuteScalar());
                 Random rng = new Random();
-                int rand2 = rng.Next(3, max_emp+1);
+                int rand2 = rng.Next(3, 7);
 
                 comm = con.CreateCommand();
                 comm.Parameters.AddWithValue("@random", rand2);
