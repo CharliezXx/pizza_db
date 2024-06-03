@@ -157,6 +157,9 @@
   <data name="Pepsi can 245 ml." type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pepsi can 245 ml..jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="น้ำทิพย์ 550 มล." type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\น้ำทิพย์ 550 มล..jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="พิซซ่าหน้าฮาวายเอี้ยน (Pizza Hawaiian)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\พิซซ่าหน้าฮาวายเอี้ยน (Pizza Hawaiian).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,7 +175,7 @@
   <data name="พิซซ่าหน้าต้มยำซีฟู้ด (Pizza Tomyum Seafood)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\พิซซ่าหน้าต้มยำซีฟู้ด (Pizza Tomyum Seafood).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="น้ำทิพย์ 550 มล." type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\น้ำทิพย์ 550 มล..jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pizza-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pizza-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -84,8 +84,8 @@ namespace pizza_db
             else if (textBox_name_firstpage.Text == "admin" && textBox_password_firstpage.Text == "admin")
             {
                 this.Hide();
-                //order_admin o = new order_admin();
-                //o.ShowDialog();
+                status_admin o = new status_admin();
+                o.ShowDialog();
                 this.Close();
             }
             else if (textBox_name_firstpage.Text != name || textBox_password_firstpage.Text != pass || pass != conpass)
