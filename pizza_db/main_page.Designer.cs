@@ -1216,7 +1216,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            BackColor = Color.Blue;
+            BackColor = Color.DarkCyan;
             ClientSize = new Size(1105, 672);
             Controls.Add(tabControl1);
             Controls.Add(button_get_bill);

@@ -44,42 +44,43 @@
             // 
             // back_register_button
             // 
-            back_register_button.Font = new Font("SimSun", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            back_register_button.Font = new Font("SimSun", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            back_register_button.ForeColor = Color.Black;
             back_register_button.Location = new Point(68, 267);
             back_register_button.Name = "back_register_button";
             back_register_button.Size = new Size(153, 57);
             back_register_button.TabIndex = 6;
-            back_register_button.Text = "back";
+            back_register_button.Text = "Back";
             back_register_button.UseVisualStyleBackColor = true;
             back_register_button.Click += back_register_button_Click;
             // 
             // register_text1
             // 
             register_text1.AutoSize = true;
-            register_text1.Font = new Font("Sitka Text", 24.2499962F);
+            register_text1.Font = new Font("Sitka Text", 24.2499962F, FontStyle.Bold);
             register_text1.Location = new Point(190, 26);
             register_text1.Name = "register_text1";
-            register_text1.Size = new Size(141, 48);
+            register_text1.Size = new Size(150, 48);
             register_text1.TabIndex = 2;
             register_text1.Text = "register";
             // 
             // label_username_regis
             // 
             label_username_regis.AutoSize = true;
-            label_username_regis.Font = new Font("Segoe UI", 9F);
+            label_username_regis.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label_username_regis.Location = new Point(68, 71);
             label_username_regis.Name = "label_username_regis";
-            label_username_regis.Size = new Size(60, 15);
+            label_username_regis.Size = new Size(64, 15);
             label_username_regis.TabIndex = 3;
             label_username_regis.Text = "Username";
             // 
             // label_password_regis
             // 
             label_password_regis.AutoSize = true;
-            label_password_regis.Font = new Font("Segoe UI", 9F);
+            label_password_regis.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label_password_regis.Location = new Point(68, 119);
             label_password_regis.Name = "label_password_regis";
-            label_password_regis.Size = new Size(57, 15);
+            label_password_regis.Size = new Size(59, 15);
             label_password_regis.TabIndex = 4;
             label_password_regis.Text = "Password";
             label_password_regis.Click += label_password_regis_Click;
@@ -87,10 +88,10 @@
             // label_confirm_regis
             // 
             label_confirm_regis.AutoSize = true;
-            label_confirm_regis.Font = new Font("Segoe UI", 9F);
+            label_confirm_regis.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label_confirm_regis.Location = new Point(68, 172);
             label_confirm_regis.Name = "label_confirm_regis";
-            label_confirm_regis.Size = new Size(104, 15);
+            label_confirm_regis.Size = new Size(107, 15);
             label_confirm_regis.TabIndex = 5;
             label_confirm_regis.Text = "Confirm password";
             // 
@@ -120,12 +121,13 @@
             // 
             // confirm_regis_button
             // 
-            confirm_regis_button.Font = new Font("SimSun", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            confirm_regis_button.Font = new Font("SimSun", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            confirm_regis_button.ForeColor = Color.Black;
             confirm_regis_button.Location = new Point(292, 267);
             confirm_regis_button.Name = "confirm_regis_button";
             confirm_regis_button.Size = new Size(153, 57);
             confirm_regis_button.TabIndex = 5;
-            confirm_regis_button.Text = "lesssgooo";
+            confirm_regis_button.Text = "Done";
             confirm_regis_button.UseVisualStyleBackColor = true;
             confirm_regis_button.Click += confirm_regis_button_Click;
             // 
@@ -135,7 +137,7 @@
             error_label.ForeColor = Color.Red;
             error_label.Location = new Point(68, 216);
             error_label.Name = "error_label";
-            error_label.Size = new Size(205, 15);
+            error_label.Size = new Size(216, 15);
             error_label.TabIndex = 10;
             error_label.Text = "Incorrect data or password not match";
             // 
@@ -143,9 +145,9 @@
             // 
             error_label_username_taken.AutoSize = true;
             error_label_username_taken.ForeColor = Color.Red;
-            error_label_username_taken.Location = new Point(292, 115);
+            error_label_username_taken.Location = new Point(280, 115);
             error_label_username_taken.Name = "error_label_username_taken";
-            error_label_username_taken.Size = new Size(156, 15);
+            error_label_username_taken.Size = new Size(165, 15);
             error_label_username_taken.TabIndex = 11;
             error_label_username_taken.Text = "This username already taken";
             // 
@@ -155,7 +157,7 @@
             checkBox_show_regis.Location = new Point(337, 215);
             checkBox_show_regis.Name = "checkBox_show_regis";
             checkBox_show_regis.RightToLeft = RightToLeft.Yes;
-            checkBox_show_regis.Size = new Size(108, 19);
+            checkBox_show_regis.Size = new Size(112, 19);
             checkBox_show_regis.TabIndex = 4;
             checkBox_show_regis.Text = "Show password";
             checkBox_show_regis.UseVisualStyleBackColor = true;
@@ -167,6 +169,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.DarkCyan;
             ClientSize = new Size(524, 361);
             Controls.Add(checkBox_show_regis);
             Controls.Add(error_label_username_taken);
@@ -180,6 +183,8 @@
             Controls.Add(label_username_regis);
             Controls.Add(register_text1);
             Controls.Add(back_register_button);
+            Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            ForeColor = Color.Yellow;
             MaximizeBox = false;
             Name = "register";
             SizeGripStyle = SizeGripStyle.Hide;

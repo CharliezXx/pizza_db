@@ -36,6 +36,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(components);
             panel1 = new Panel();
+            label7 = new Label();
             label3 = new Label();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             label11 = new Label();
@@ -47,7 +48,6 @@
             label2 = new Label();
             label1 = new Label();
             guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            label7 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
@@ -82,6 +82,15 @@
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(30, 370);
+            label7.Name = "label7";
+            label7.Size = new Size(77, 15);
+            label7.TabIndex = 37;
+            label7.Text = "Take order by";
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -108,7 +117,7 @@
             dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = Color.White;
             dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle6.ForeColor = Color.FromArgb(0, 0, 192);
             dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
@@ -176,7 +185,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Leelawadee UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(325, 313);
+            label6.Location = new Point(325, 312);
             label6.Name = "label6";
             label6.Size = new Size(33, 19);
             label6.TabIndex = 29;
@@ -230,8 +239,10 @@
             guna2GradientButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2GradientButton1.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             guna2GradientButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2GradientButton1.FillColor = Color.Yellow;
+            guna2GradientButton1.FillColor2 = Color.Yellow;
             guna2GradientButton1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2GradientButton1.ForeColor = Color.White;
+            guna2GradientButton1.ForeColor = Color.Black;
             guna2GradientButton1.Location = new Point(148, 510);
             guna2GradientButton1.Name = "guna2GradientButton1";
             guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -240,23 +251,16 @@
             guna2GradientButton1.Text = "DONE";
             guna2GradientButton1.Click += guna2GradientButton1_Click;
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(30, 370);
-            label7.Name = "label7";
-            label7.Size = new Size(77, 15);
-            label7.TabIndex = 37;
-            label7.Text = "Take order by";
-            // 
             // order
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.DarkCyan;
             ClientSize = new Size(439, 567);
             Controls.Add(guna2GradientButton1);
             Controls.Add(panel1);
+            ForeColor = Color.FromArgb(0, 0, 192);
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "order";

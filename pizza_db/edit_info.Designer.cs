@@ -51,18 +51,22 @@
             // label_edit_info
             // 
             label_edit_info.AutoSize = true;
+            label_edit_info.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label_edit_info.ForeColor = Color.Yellow;
             label_edit_info.Location = new Point(10, 7);
             label_edit_info.Name = "label_edit_info";
-            label_edit_info.Size = new Size(27, 15);
+            label_edit_info.Size = new Size(28, 15);
             label_edit_info.TabIndex = 0;
             label_edit_info.Text = "Edit";
             // 
             // label_address
             // 
             label_address.AutoSize = true;
+            label_address.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label_address.ForeColor = Color.Yellow;
             label_address.Location = new Point(10, 81);
             label_address.Name = "label_address";
-            label_address.Size = new Size(49, 15);
+            label_address.Size = new Size(51, 15);
             label_address.TabIndex = 1;
             label_address.Text = "Address";
             // 
@@ -78,18 +82,22 @@
             // label_road
             // 
             label_road.AutoSize = true;
+            label_road.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label_road.ForeColor = Color.Yellow;
             label_road.Location = new Point(10, 230);
             label_road.Name = "label_road";
-            label_road.Size = new Size(34, 15);
+            label_road.Size = new Size(35, 15);
             label_road.TabIndex = 3;
             label_road.Text = "Road";
             // 
             // label_name
             // 
             label_name.AutoSize = true;
+            label_name.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label_name.ForeColor = Color.Yellow;
             label_name.Location = new Point(10, 31);
             label_name.Name = "label_name";
-            label_name.Size = new Size(59, 15);
+            label_name.Size = new Size(62, 15);
             label_name.TabIndex = 4;
             label_name.Text = "Firstname";
             label_name.Click += label_name_Click;
@@ -118,15 +126,19 @@
             // label_zipcode
             // 
             label_zipcode.AutoSize = true;
+            label_zipcode.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label_zipcode.ForeColor = Color.Yellow;
             label_zipcode.Location = new Point(10, 332);
             label_zipcode.Name = "label_zipcode";
-            label_zipcode.Size = new Size(50, 15);
+            label_zipcode.Size = new Size(51, 15);
             label_zipcode.TabIndex = 8;
             label_zipcode.Text = "Zipcode";
             // 
             // label_city
             // 
             label_city.AutoSize = true;
+            label_city.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label_city.ForeColor = Color.Yellow;
             label_city.Location = new Point(10, 280);
             label_city.Name = "label_city";
             label_city.Size = new Size(28, 15);
@@ -142,12 +154,14 @@
             // 
             // button_save
             // 
+            button_save.BackColor = Color.Yellow;
+            button_save.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button_save.Location = new Point(240, 302);
             button_save.Name = "button_save";
             button_save.Size = new Size(213, 75);
             button_save.TabIndex = 8;
             button_save.Text = "SAVE";
-            button_save.UseVisualStyleBackColor = true;
+            button_save.UseVisualStyleBackColor = false;
             button_save.Click += button_save_Click;
             // 
             // textBox_tel
@@ -160,30 +174,36 @@
             // label_tel
             // 
             label_tel.AutoSize = true;
+            label_tel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label_tel.ForeColor = Color.Yellow;
             label_tel.Location = new Point(242, 230);
             label_tel.Name = "label_tel";
-            label_tel.Size = new Size(21, 15);
+            label_tel.Size = new Size(23, 15);
             label_tel.TabIndex = 12;
             label_tel.Text = "Tel";
             // 
             // button_back
             // 
+            button_back.BackColor = Color.Yellow;
+            button_back.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button_back.Location = new Point(10, 398);
             button_back.Name = "button_back";
             button_back.Size = new Size(211, 75);
             button_back.TabIndex = 10;
             button_back.Text = "BACK";
-            button_back.UseVisualStyleBackColor = true;
+            button_back.UseVisualStyleBackColor = false;
             button_back.Click += button_back_Click;
             // 
             // button1
             // 
+            button1.BackColor = Color.Yellow;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button1.Location = new Point(240, 398);
             button1.Name = "button1";
             button1.Size = new Size(213, 75);
             button1.TabIndex = 9;
             button1.Text = "CLEAR";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // textBox_lastname
@@ -196,9 +216,11 @@
             // label_lastname
             // 
             label_lastname.AutoSize = true;
+            label_lastname.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label_lastname.ForeColor = Color.Yellow;
             label_lastname.Location = new Point(242, 31);
             label_lastname.Name = "label_lastname";
-            label_lastname.Size = new Size(58, 15);
+            label_lastname.Size = new Size(60, 15);
             label_lastname.TabIndex = 17;
             label_lastname.Text = "Lastname";
             // 
@@ -208,7 +230,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            BackColor = Color.Chartreuse;
+            BackColor = Color.DarkCyan;
             ClientSize = new Size(466, 494);
             Controls.Add(label_lastname);
             Controls.Add(textBox_lastname);

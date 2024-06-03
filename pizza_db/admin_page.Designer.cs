@@ -949,17 +949,17 @@
             // amlabel1
             // 
             amlabel1.AutoSize = true;
-            amlabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            amlabel1.ForeColor = Color.White;
+            amlabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            amlabel1.ForeColor = Color.Yellow;
             amlabel1.Location = new Point(6, 9);
             amlabel1.Name = "amlabel1";
-            amlabel1.Size = new Size(270, 20);
+            amlabel1.Size = new Size(302, 20);
             amlabel1.TabIndex = 8;
             amlabel1.Text = "Pizza Shop Management System 1.0";
             // 
             // panel2
             // 
-            panel2.BackColor = Color.LightSlateGray;
+            panel2.BackColor = Color.DarkCyan;
             panel2.Controls.Add(amlabel1);
             panel2.Location = new Point(198, 0);
             panel2.Margin = new Padding(3, 2, 3, 2);

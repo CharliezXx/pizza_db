@@ -38,6 +38,10 @@
             panel1 = new Panel();
             tabControl1 = new TabControl();
             order = new TabPage();
+            label32 = new Label();
+            textBox29 = new TextBox();
+            textBox30 = new TextBox();
+            label33 = new Label();
             dataGridView1 = new DataGridView();
             button4 = new Button();
             button3 = new Button();
@@ -133,10 +137,6 @@
             label30 = new Label();
             textBox28 = new TextBox();
             label31 = new Label();
-            label32 = new Label();
-            textBox29 = new TextBox();
-            textBox30 = new TextBox();
-            label33 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -161,73 +161,75 @@
             // 
             pictureBox1.ErrorImage = null;
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(34, 26);
+            pictureBox1.Location = new Point(30, 20);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(123, 91);
+            pictureBox1.Size = new Size(108, 68);
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             // 
             // amlabel1
             // 
             amlabel1.AutoSize = true;
-            amlabel1.Font = new Font("MS Reference Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            amlabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             amlabel1.ForeColor = Color.White;
-            amlabel1.Location = new Point(37, 10);
+            amlabel1.Location = new Point(32, 8);
             amlabel1.Name = "amlabel1";
-            amlabel1.Size = new Size(381, 26);
+            amlabel1.Size = new Size(270, 20);
             amlabel1.TabIndex = 8;
             amlabel1.Text = "Pizza Shop Management System 1.0";
             // 
             // panel2
             // 
-            panel2.BackColor = Color.LightSlateGray;
+            panel2.BackColor = Color.DarkCyan;
             panel2.Controls.Add(amlabel1);
-            panel2.Location = new Point(231, 2);
+            panel2.Location = new Point(202, 2);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(993, 54);
+            panel2.Size = new Size(869, 40);
             panel2.TabIndex = 14;
             // 
             // label5
             // 
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("MS Reference Sans Serif", 16.2F);
+            label5.Font = new Font("Microsoft Sans Serif", 16.2F);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(24, 291);
+            label5.Location = new Point(21, 218);
             label5.Name = "label5";
-            label5.Size = new Size(199, 31);
+            label5.Size = new Size(174, 23);
             label5.TabIndex = 7;
             label5.Text = "Management";
             // 
             // label4
             // 
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("MS Reference Sans Serif", 16.2F);
+            label4.Font = new Font("Microsoft Sans Serif", 16.2F);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(24, 225);
+            label4.Location = new Point(21, 169);
             label4.Name = "label4";
-            label4.Size = new Size(196, 31);
+            label4.Size = new Size(172, 23);
             label4.TabIndex = 6;
             label4.Text = "Status";
             // 
             // label1
             // 
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("MS Reference Sans Serif", 16.2F);
+            label1.Font = new Font("Microsoft Sans Serif", 16.2F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(24, 149);
+            label1.Location = new Point(21, 112);
             label1.Name = "label1";
-            label1.Size = new Size(196, 31);
+            label1.Size = new Size(172, 23);
             label1.TabIndex = 3;
             label1.Text = "Order";
             // 
             // amlabel2
             // 
             amlabel2.BackColor = Color.Transparent;
-            amlabel2.Font = new Font("MS Reference Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            amlabel2.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             amlabel2.ForeColor = Color.White;
-            amlabel2.Location = new Point(116, 486);
+            amlabel2.Location = new Point(102, 364);
             amlabel2.Name = "amlabel2";
-            amlabel2.Size = new Size(133, 42);
+            amlabel2.Size = new Size(116, 32);
             amlabel2.TabIndex = 2;
             amlabel2.Text = "log out";
             // 
@@ -240,8 +242,9 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(amlabel2);
             panel1.Location = new Point(2, 2);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(229, 528);
+            panel1.Size = new Size(200, 396);
             panel1.TabIndex = 13;
             // 
             // tabControl1
@@ -253,10 +256,11 @@
             tabControl1.Controls.Add(vehicle);
             tabControl1.Controls.Add(pizza);
             tabControl1.Controls.Add(non_pizza);
-            tabControl1.Location = new Point(231, 53);
+            tabControl1.Location = new Point(202, 40);
+            tabControl1.Margin = new Padding(3, 2, 3, 2);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(993, 477);
+            tabControl1.Size = new Size(869, 358);
             tabControl1.TabIndex = 15;
             // 
             // order
@@ -282,30 +286,67 @@
             order.Controls.Add(label3);
             order.Controls.Add(textBox1);
             order.Controls.Add(label2);
-            order.Location = new Point(4, 29);
+            order.Location = new Point(4, 24);
+            order.Margin = new Padding(3, 2, 3, 2);
             order.Name = "order";
-            order.Padding = new Padding(3);
-            order.Size = new Size(985, 444);
+            order.Padding = new Padding(3, 2, 3, 2);
+            order.Size = new Size(861, 330);
             order.TabIndex = 0;
             order.Text = "order";
             order.UseVisualStyleBackColor = true;
             // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Location = new Point(35, 71);
+            label32.Name = "label32";
+            label32.Size = new Size(72, 15);
+            label32.TabIndex = 20;
+            label32.Text = "non pizza_id";
+            // 
+            // textBox29
+            // 
+            textBox29.Location = new Point(177, 88);
+            textBox29.Margin = new Padding(3, 2, 3, 2);
+            textBox29.Name = "textBox29";
+            textBox29.Size = new Size(110, 23);
+            textBox29.TabIndex = 19;
+            // 
+            // textBox30
+            // 
+            textBox30.Location = new Point(34, 88);
+            textBox30.Margin = new Padding(3, 2, 3, 2);
+            textBox30.Name = "textBox30";
+            textBox30.Size = new Size(110, 23);
+            textBox30.TabIndex = 18;
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Location = new Point(735, 13);
+            label33.Name = "label33";
+            label33.Size = new Size(48, 15);
+            label33.TabIndex = 17;
+            label33.Text = "pizza_id";
+            // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(69, 211);
+            dataGridView1.Location = new Point(60, 158);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(858, 226);
+            dataGridView1.Size = new Size(751, 170);
             dataGridView1.TabIndex = 16;
             // 
             // button4
             // 
             button4.BackColor = Color.DodgerBlue;
             button4.ForeColor = Color.White;
-            button4.Location = new Point(500, 161);
+            button4.Location = new Point(438, 121);
+            button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
-            button4.Size = new Size(140, 42);
+            button4.Size = new Size(122, 32);
             button4.TabIndex = 15;
             button4.Text = "Clear";
             button4.UseVisualStyleBackColor = false;
@@ -315,9 +356,10 @@
             // 
             button3.BackColor = Color.FromArgb(0, 192, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(308, 161);
+            button3.Location = new Point(270, 121);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(140, 42);
+            button3.Size = new Size(122, 32);
             button3.TabIndex = 14;
             button3.Text = "Update";
             button3.UseVisualStyleBackColor = false;
@@ -326,9 +368,10 @@
             // 
             button2.BackColor = Color.FromArgb(0, 192, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(117, 161);
+            button2.Location = new Point(102, 121);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(140, 42);
+            button2.Size = new Size(122, 32);
             button2.TabIndex = 13;
             button2.Text = "Insert";
             button2.UseVisualStyleBackColor = false;
@@ -337,9 +380,10 @@
             // 
             button1.BackColor = Color.FromArgb(192, 0, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(700, 161);
+            button1.Location = new Point(612, 121);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(140, 42);
+            button1.Size = new Size(122, 32);
             button1.TabIndex = 12;
             button1.Text = "Delete";
             button1.UseVisualStyleBackColor = false;
@@ -347,99 +391,105 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(840, 45);
+            textBox6.Location = new Point(735, 34);
+            textBox6.Margin = new Padding(3, 2, 3, 2);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(125, 27);
+            textBox6.Size = new Size(110, 23);
             textBox6.TabIndex = 11;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(690, 22);
+            label9.Location = new Point(604, 16);
             label9.Name = "label9";
-            label9.Size = new Size(70, 20);
+            label9.Size = new Size(56, 15);
             label9.TabIndex = 10;
             label9.Text = "vihicle_id";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(690, 45);
+            textBox5.Location = new Point(604, 34);
+            textBox5.Margin = new Padding(3, 2, 3, 2);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 27);
+            textBox5.Size = new Size(110, 23);
             textBox5.TabIndex = 9;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(532, 17);
+            label8.Location = new Point(466, 13);
             label8.Name = "label8";
-            label8.Size = new Size(94, 20);
+            label8.Size = new Size(74, 15);
             label8.TabIndex = 8;
             label8.Text = "employee_id";
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(532, 45);
+            textBox4.Location = new Point(466, 34);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
+            textBox4.Size = new Size(110, 23);
             textBox4.TabIndex = 7;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(202, 17);
+            label7.Location = new Point(177, 13);
             label7.Name = "label7";
-            label7.Size = new Size(89, 20);
+            label7.Size = new Size(72, 15);
             label7.TabIndex = 6;
             label7.Text = "customer_id";
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(365, 45);
+            textBox3.Location = new Point(319, 34);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
+            textBox3.Size = new Size(110, 23);
             textBox3.TabIndex = 5;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(202, 95);
+            label6.Location = new Point(177, 71);
             label6.Name = "label6";
-            label6.Size = new Size(89, 20);
+            label6.Size = new Size(71, 15);
             label6.TabIndex = 4;
             label6.Text = "order_status";
             label6.Click += label6_Click;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(202, 45);
+            textBox2.Location = new Point(177, 34);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
+            textBox2.Size = new Size(110, 23);
             textBox2.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(369, 17);
+            label3.Location = new Point(323, 13);
             label3.Name = "label3";
-            label3.Size = new Size(79, 20);
+            label3.Size = new Size(62, 15);
             label3.TabIndex = 2;
             label3.Text = "total_price";
             label3.Click += label3_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(39, 45);
+            textBox1.Location = new Point(34, 34);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
+            textBox1.Size = new Size(110, 23);
             textBox1.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(39, 22);
+            label2.Location = new Point(34, 16);
             label2.Name = "label2";
-            label2.Size = new Size(64, 20);
+            label2.Size = new Size(50, 15);
             label2.TabIndex = 0;
             label2.Text = "order_id";
             label2.Click += label2_Click;
@@ -461,9 +511,10 @@
             address.Controls.Add(label13);
             address.Controls.Add(textBox11);
             address.Controls.Add(label14);
-            address.Location = new Point(4, 29);
+            address.Location = new Point(4, 24);
+            address.Margin = new Padding(3, 2, 3, 2);
             address.Name = "address";
-            address.Size = new Size(985, 444);
+            address.Size = new Size(861, 330);
             address.TabIndex = 2;
             address.Text = "address";
             address.UseVisualStyleBackColor = true;
@@ -471,19 +522,21 @@
             // dataGridView2
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(78, 158);
+            dataGridView2.Location = new Point(68, 118);
+            dataGridView2.Margin = new Padding(3, 2, 3, 2);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(858, 272);
+            dataGridView2.Size = new Size(751, 204);
             dataGridView2.TabIndex = 31;
             // 
             // button5
             // 
             button5.BackColor = Color.DodgerBlue;
             button5.ForeColor = Color.White;
-            button5.Location = new Point(526, 91);
+            button5.Location = new Point(460, 68);
+            button5.Margin = new Padding(3, 2, 3, 2);
             button5.Name = "button5";
-            button5.Size = new Size(140, 42);
+            button5.Size = new Size(122, 32);
             button5.TabIndex = 30;
             button5.Text = "Clear";
             button5.UseVisualStyleBackColor = false;
@@ -492,9 +545,10 @@
             // 
             button6.BackColor = Color.FromArgb(0, 192, 0);
             button6.ForeColor = Color.White;
-            button6.Location = new Point(334, 91);
+            button6.Location = new Point(292, 68);
+            button6.Margin = new Padding(3, 2, 3, 2);
             button6.Name = "button6";
-            button6.Size = new Size(140, 42);
+            button6.Size = new Size(122, 32);
             button6.TabIndex = 29;
             button6.Text = "Update";
             button6.UseVisualStyleBackColor = false;
@@ -503,9 +557,10 @@
             // 
             button7.BackColor = Color.FromArgb(0, 192, 0);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(143, 91);
+            button7.Location = new Point(125, 68);
+            button7.Margin = new Padding(3, 2, 3, 2);
             button7.Name = "button7";
-            button7.Size = new Size(140, 42);
+            button7.Size = new Size(122, 32);
             button7.TabIndex = 28;
             button7.Text = "Insert";
             button7.UseVisualStyleBackColor = false;
@@ -514,90 +569,96 @@
             // 
             button8.BackColor = Color.FromArgb(192, 0, 0);
             button8.ForeColor = Color.White;
-            button8.Location = new Point(726, 91);
+            button8.Location = new Point(635, 68);
+            button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
-            button8.Size = new Size(140, 42);
+            button8.Size = new Size(122, 32);
             button8.TabIndex = 27;
             button8.Text = "Delete";
             button8.UseVisualStyleBackColor = false;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(756, 39);
+            textBox7.Location = new Point(662, 29);
+            textBox7.Margin = new Padding(3, 2, 3, 2);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(125, 27);
+            textBox7.Size = new Size(110, 23);
             textBox7.TabIndex = 26;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(756, 16);
+            label10.Location = new Point(662, 12);
             label10.Name = "label10";
-            label10.Size = new Size(62, 20);
+            label10.Size = new Size(48, 15);
             label10.TabIndex = 25;
             label10.Text = "zipcode";
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(598, 39);
+            textBox8.Location = new Point(523, 29);
+            textBox8.Margin = new Padding(3, 2, 3, 2);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(125, 27);
+            textBox8.Size = new Size(110, 23);
             textBox8.TabIndex = 24;
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(598, 16);
+            label11.Location = new Point(523, 12);
             label11.Name = "label11";
-            label11.Size = new Size(32, 20);
+            label11.Size = new Size(26, 15);
             label11.TabIndex = 23;
             label11.Text = "city";
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(431, 39);
+            textBox9.Location = new Point(377, 29);
+            textBox9.Margin = new Padding(3, 2, 3, 2);
             textBox9.Name = "textBox9";
-            textBox9.Size = new Size(125, 27);
+            textBox9.Size = new Size(110, 23);
             textBox9.TabIndex = 22;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(431, 16);
+            label12.Location = new Point(377, 12);
             label12.Name = "label12";
-            label12.Size = new Size(45, 20);
+            label12.Size = new Size(35, 15);
             label12.TabIndex = 21;
             label12.Text = "place";
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(268, 39);
+            textBox10.Location = new Point(234, 29);
+            textBox10.Margin = new Padding(3, 2, 3, 2);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(125, 27);
+            textBox10.Size = new Size(110, 23);
             textBox10.TabIndex = 20;
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(268, 16);
+            label13.Location = new Point(234, 12);
             label13.Name = "label13";
-            label13.Size = new Size(40, 20);
+            label13.Size = new Size(31, 15);
             label13.TabIndex = 19;
             label13.Text = "road";
             // 
             // textBox11
             // 
-            textBox11.Location = new Point(105, 39);
+            textBox11.Location = new Point(92, 29);
+            textBox11.Margin = new Padding(3, 2, 3, 2);
             textBox11.Name = "textBox11";
-            textBox11.Size = new Size(125, 27);
+            textBox11.Size = new Size(110, 23);
             textBox11.TabIndex = 18;
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(105, 16);
+            label14.Location = new Point(92, 12);
             label14.Name = "label14";
-            label14.Size = new Size(79, 20);
+            label14.Size = new Size(62, 15);
             label14.TabIndex = 17;
             label14.Text = "address_id";
             // 
@@ -614,9 +675,10 @@
             payment.Controls.Add(label18);
             payment.Controls.Add(textBox16);
             payment.Controls.Add(label19);
-            payment.Location = new Point(4, 29);
+            payment.Location = new Point(4, 24);
+            payment.Margin = new Padding(3, 2, 3, 2);
             payment.Name = "payment";
-            payment.Size = new Size(985, 444);
+            payment.Size = new Size(861, 330);
             payment.TabIndex = 3;
             payment.Text = "payment";
             payment.UseVisualStyleBackColor = true;
@@ -624,19 +686,21 @@
             // dataGridView3
             // 
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView3.Location = new Point(78, 158);
+            dataGridView3.Location = new Point(68, 118);
+            dataGridView3.Margin = new Padding(3, 2, 3, 2);
             dataGridView3.Name = "dataGridView3";
             dataGridView3.RowHeadersWidth = 51;
-            dataGridView3.Size = new Size(858, 272);
+            dataGridView3.Size = new Size(751, 204);
             dataGridView3.TabIndex = 31;
             // 
             // button9
             // 
             button9.BackColor = Color.DodgerBlue;
             button9.ForeColor = Color.White;
-            button9.Location = new Point(526, 91);
+            button9.Location = new Point(460, 68);
+            button9.Margin = new Padding(3, 2, 3, 2);
             button9.Name = "button9";
-            button9.Size = new Size(140, 42);
+            button9.Size = new Size(122, 32);
             button9.TabIndex = 30;
             button9.Text = "Clear";
             button9.UseVisualStyleBackColor = false;
@@ -645,9 +709,10 @@
             // 
             button10.BackColor = Color.FromArgb(0, 192, 0);
             button10.ForeColor = Color.White;
-            button10.Location = new Point(334, 91);
+            button10.Location = new Point(292, 68);
+            button10.Margin = new Padding(3, 2, 3, 2);
             button10.Name = "button10";
-            button10.Size = new Size(140, 42);
+            button10.Size = new Size(122, 32);
             button10.TabIndex = 29;
             button10.Text = "Update";
             button10.UseVisualStyleBackColor = false;
@@ -656,9 +721,10 @@
             // 
             button11.BackColor = Color.FromArgb(0, 192, 0);
             button11.ForeColor = Color.White;
-            button11.Location = new Point(143, 91);
+            button11.Location = new Point(125, 68);
+            button11.Margin = new Padding(3, 2, 3, 2);
             button11.Name = "button11";
-            button11.Size = new Size(140, 42);
+            button11.Size = new Size(122, 32);
             button11.TabIndex = 28;
             button11.Text = "Insert";
             button11.UseVisualStyleBackColor = false;
@@ -667,59 +733,63 @@
             // 
             button12.BackColor = Color.FromArgb(192, 0, 0);
             button12.ForeColor = Color.White;
-            button12.Location = new Point(726, 91);
+            button12.Location = new Point(635, 68);
+            button12.Margin = new Padding(3, 2, 3, 2);
             button12.Name = "button12";
-            button12.Size = new Size(140, 42);
+            button12.Size = new Size(122, 32);
             button12.TabIndex = 27;
             button12.Text = "Delete";
             button12.UseVisualStyleBackColor = false;
             // 
             // textBox14
             // 
-            textBox14.Location = new Point(600, 40);
+            textBox14.Location = new Point(525, 30);
+            textBox14.Margin = new Padding(3, 2, 3, 2);
             textBox14.Name = "textBox14";
-            textBox14.Size = new Size(125, 27);
+            textBox14.Size = new Size(110, 23);
             textBox14.TabIndex = 22;
             // 
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(437, 17);
+            label17.Location = new Point(382, 13);
             label17.Name = "label17";
-            label17.Size = new Size(61, 20);
+            label17.Size = new Size(49, 15);
             label17.TabIndex = 21;
             label17.Text = "method";
             // 
             // textBox15
             // 
-            textBox15.Location = new Point(437, 40);
+            textBox15.Location = new Point(382, 30);
+            textBox15.Margin = new Padding(3, 2, 3, 2);
             textBox15.Name = "textBox15";
-            textBox15.Size = new Size(125, 27);
+            textBox15.Size = new Size(110, 23);
             textBox15.TabIndex = 20;
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(600, 17);
+            label18.Location = new Point(525, 13);
             label18.Name = "label18";
-            label18.Size = new Size(74, 20);
+            label18.Size = new Size(58, 15);
             label18.TabIndex = 19;
             label18.Text = "toal_price";
             label18.Click += label18_Click;
             // 
             // textBox16
             // 
-            textBox16.Location = new Point(274, 40);
+            textBox16.Location = new Point(240, 30);
+            textBox16.Margin = new Padding(3, 2, 3, 2);
             textBox16.Name = "textBox16";
-            textBox16.Size = new Size(125, 27);
+            textBox16.Size = new Size(110, 23);
             textBox16.TabIndex = 18;
             // 
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(274, 17);
+            label19.Location = new Point(240, 13);
             label19.Name = "label19";
-            label19.Size = new Size(86, 20);
+            label19.Size = new Size(69, 15);
             label19.TabIndex = 17;
             label19.Text = "payment_id";
             // 
@@ -738,9 +808,10 @@
             employee.Controls.Add(label21);
             employee.Controls.Add(textBox19);
             employee.Controls.Add(label22);
-            employee.Location = new Point(4, 29);
+            employee.Location = new Point(4, 24);
+            employee.Margin = new Padding(3, 2, 3, 2);
             employee.Name = "employee";
-            employee.Size = new Size(985, 444);
+            employee.Size = new Size(861, 330);
             employee.TabIndex = 4;
             employee.Text = "employee";
             employee.UseVisualStyleBackColor = true;
@@ -748,19 +819,21 @@
             // dataGridView4
             // 
             dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView4.Location = new Point(78, 158);
+            dataGridView4.Location = new Point(68, 118);
+            dataGridView4.Margin = new Padding(3, 2, 3, 2);
             dataGridView4.Name = "dataGridView4";
             dataGridView4.RowHeadersWidth = 51;
-            dataGridView4.Size = new Size(858, 272);
+            dataGridView4.Size = new Size(751, 204);
             dataGridView4.TabIndex = 31;
             // 
             // button13
             // 
             button13.BackColor = Color.DodgerBlue;
             button13.ForeColor = Color.White;
-            button13.Location = new Point(526, 91);
+            button13.Location = new Point(460, 68);
+            button13.Margin = new Padding(3, 2, 3, 2);
             button13.Name = "button13";
-            button13.Size = new Size(140, 42);
+            button13.Size = new Size(122, 32);
             button13.TabIndex = 30;
             button13.Text = "Clear";
             button13.UseVisualStyleBackColor = false;
@@ -769,9 +842,10 @@
             // 
             button14.BackColor = Color.FromArgb(0, 192, 0);
             button14.ForeColor = Color.White;
-            button14.Location = new Point(334, 91);
+            button14.Location = new Point(292, 68);
+            button14.Margin = new Padding(3, 2, 3, 2);
             button14.Name = "button14";
-            button14.Size = new Size(140, 42);
+            button14.Size = new Size(122, 32);
             button14.TabIndex = 29;
             button14.Text = "Update";
             button14.UseVisualStyleBackColor = false;
@@ -780,9 +854,10 @@
             // 
             button15.BackColor = Color.FromArgb(0, 192, 0);
             button15.ForeColor = Color.White;
-            button15.Location = new Point(143, 91);
+            button15.Location = new Point(125, 68);
+            button15.Margin = new Padding(3, 2, 3, 2);
             button15.Name = "button15";
-            button15.Size = new Size(140, 42);
+            button15.Size = new Size(122, 32);
             button15.TabIndex = 28;
             button15.Text = "Insert";
             button15.UseVisualStyleBackColor = false;
@@ -791,76 +866,81 @@
             // 
             button16.BackColor = Color.FromArgb(192, 0, 0);
             button16.ForeColor = Color.White;
-            button16.Location = new Point(726, 91);
+            button16.Location = new Point(635, 68);
+            button16.Margin = new Padding(3, 2, 3, 2);
             button16.Name = "button16";
-            button16.Size = new Size(140, 42);
+            button16.Size = new Size(122, 32);
             button16.TabIndex = 27;
             button16.Text = "Delete";
             button16.UseVisualStyleBackColor = false;
             // 
             // textBox13
             // 
-            textBox13.Location = new Point(670, 41);
+            textBox13.Location = new Point(586, 31);
+            textBox13.Margin = new Padding(3, 2, 3, 2);
             textBox13.Name = "textBox13";
-            textBox13.Size = new Size(125, 27);
+            textBox13.Size = new Size(110, 23);
             textBox13.TabIndex = 24;
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(670, 18);
+            label16.Location = new Point(586, 14);
             label16.Name = "label16";
-            label16.Size = new Size(119, 20);
+            label16.Size = new Size(95, 15);
             label16.TabIndex = 23;
             label16.Text = "employee_status";
             label16.Click += label16_Click;
             // 
             // textBox17
             // 
-            textBox17.Location = new Point(503, 41);
+            textBox17.Location = new Point(440, 31);
+            textBox17.Margin = new Padding(3, 2, 3, 2);
             textBox17.Name = "textBox17";
-            textBox17.Size = new Size(125, 27);
+            textBox17.Size = new Size(110, 23);
             textBox17.TabIndex = 22;
             // 
             // label20
             // 
             label20.AutoSize = true;
-            label20.Location = new Point(503, 18);
+            label20.Location = new Point(440, 14);
             label20.Name = "label20";
-            label20.Size = new Size(26, 20);
+            label20.Size = new Size(20, 15);
             label20.TabIndex = 21;
             label20.Text = "tel";
             // 
             // textBox18
             // 
-            textBox18.Location = new Point(340, 41);
+            textBox18.Location = new Point(298, 31);
+            textBox18.Margin = new Padding(3, 2, 3, 2);
             textBox18.Name = "textBox18";
-            textBox18.Size = new Size(125, 27);
+            textBox18.Size = new Size(110, 23);
             textBox18.TabIndex = 20;
             // 
             // label21
             // 
             label21.AutoSize = true;
-            label21.Location = new Point(340, 18);
+            label21.Location = new Point(298, 14);
             label21.Name = "label21";
-            label21.Size = new Size(118, 20);
+            label21.Size = new Size(94, 15);
             label21.TabIndex = 19;
             label21.Text = "employee_name";
             label21.Click += label21_Click;
             // 
             // textBox19
             // 
-            textBox19.Location = new Point(177, 41);
+            textBox19.Location = new Point(155, 31);
+            textBox19.Margin = new Padding(3, 2, 3, 2);
             textBox19.Name = "textBox19";
-            textBox19.Size = new Size(125, 27);
+            textBox19.Size = new Size(110, 23);
             textBox19.TabIndex = 18;
             // 
             // label22
             // 
             label22.AutoSize = true;
-            label22.Location = new Point(177, 18);
+            label22.Location = new Point(155, 14);
             label22.Name = "label22";
-            label22.Size = new Size(94, 20);
+            label22.Size = new Size(74, 15);
             label22.TabIndex = 17;
             label22.Text = "employee_id";
             // 
@@ -877,9 +957,10 @@
             vehicle.Controls.Add(label24);
             vehicle.Controls.Add(textBox22);
             vehicle.Controls.Add(label25);
-            vehicle.Location = new Point(4, 29);
+            vehicle.Location = new Point(4, 24);
+            vehicle.Margin = new Padding(3, 2, 3, 2);
             vehicle.Name = "vehicle";
-            vehicle.Size = new Size(985, 444);
+            vehicle.Size = new Size(861, 330);
             vehicle.TabIndex = 5;
             vehicle.Text = "vehicle";
             vehicle.UseVisualStyleBackColor = true;
@@ -887,19 +968,21 @@
             // dataGridView5
             // 
             dataGridView5.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView5.Location = new Point(63, 157);
+            dataGridView5.Location = new Point(55, 118);
+            dataGridView5.Margin = new Padding(3, 2, 3, 2);
             dataGridView5.Name = "dataGridView5";
             dataGridView5.RowHeadersWidth = 51;
-            dataGridView5.Size = new Size(858, 272);
+            dataGridView5.Size = new Size(751, 204);
             dataGridView5.TabIndex = 42;
             // 
             // button17
             // 
             button17.BackColor = Color.DodgerBlue;
             button17.ForeColor = Color.White;
-            button17.Location = new Point(511, 90);
+            button17.Location = new Point(447, 68);
+            button17.Margin = new Padding(3, 2, 3, 2);
             button17.Name = "button17";
-            button17.Size = new Size(140, 42);
+            button17.Size = new Size(122, 32);
             button17.TabIndex = 41;
             button17.Text = "Clear";
             button17.UseVisualStyleBackColor = false;
@@ -908,9 +991,10 @@
             // 
             button18.BackColor = Color.FromArgb(0, 192, 0);
             button18.ForeColor = Color.White;
-            button18.Location = new Point(319, 90);
+            button18.Location = new Point(279, 68);
+            button18.Margin = new Padding(3, 2, 3, 2);
             button18.Name = "button18";
-            button18.Size = new Size(140, 42);
+            button18.Size = new Size(122, 32);
             button18.TabIndex = 40;
             button18.Text = "Update";
             button18.UseVisualStyleBackColor = false;
@@ -919,9 +1003,10 @@
             // 
             button19.BackColor = Color.FromArgb(0, 192, 0);
             button19.ForeColor = Color.White;
-            button19.Location = new Point(128, 90);
+            button19.Location = new Point(112, 68);
+            button19.Margin = new Padding(3, 2, 3, 2);
             button19.Name = "button19";
-            button19.Size = new Size(140, 42);
+            button19.Size = new Size(122, 32);
             button19.TabIndex = 39;
             button19.Text = "Insert";
             button19.UseVisualStyleBackColor = false;
@@ -930,58 +1015,62 @@
             // 
             button20.BackColor = Color.FromArgb(192, 0, 0);
             button20.ForeColor = Color.White;
-            button20.Location = new Point(711, 90);
+            button20.Location = new Point(622, 68);
+            button20.Margin = new Padding(3, 2, 3, 2);
             button20.Name = "button20";
-            button20.Size = new Size(140, 42);
+            button20.Size = new Size(122, 32);
             button20.TabIndex = 38;
             button20.Text = "Delete";
             button20.UseVisualStyleBackColor = false;
             // 
             // textBox20
             // 
-            textBox20.Location = new Point(585, 39);
+            textBox20.Location = new Point(512, 29);
+            textBox20.Margin = new Padding(3, 2, 3, 2);
             textBox20.Name = "textBox20";
-            textBox20.Size = new Size(125, 27);
+            textBox20.Size = new Size(110, 23);
             textBox20.TabIndex = 37;
             // 
             // label23
             // 
             label23.AutoSize = true;
-            label23.Location = new Point(585, 16);
+            label23.Location = new Point(512, 12);
             label23.Name = "label23";
-            label23.Size = new Size(55, 20);
+            label23.Size = new Size(44, 15);
             label23.TabIndex = 36;
             label23.Text = "licence";
             // 
             // textBox21
             // 
-            textBox21.Location = new Point(422, 39);
+            textBox21.Location = new Point(369, 29);
+            textBox21.Margin = new Padding(3, 2, 3, 2);
             textBox21.Name = "textBox21";
-            textBox21.Size = new Size(125, 27);
+            textBox21.Size = new Size(110, 23);
             textBox21.TabIndex = 35;
             // 
             // label24
             // 
             label24.AutoSize = true;
-            label24.Location = new Point(422, 16);
+            label24.Location = new Point(369, 12);
             label24.Name = "label24";
-            label24.Size = new Size(77, 20);
+            label24.Size = new Size(61, 15);
             label24.TabIndex = 34;
             label24.Text = "type_price";
             // 
             // textBox22
             // 
-            textBox22.Location = new Point(259, 39);
+            textBox22.Location = new Point(227, 29);
+            textBox22.Margin = new Padding(3, 2, 3, 2);
             textBox22.Name = "textBox22";
-            textBox22.Size = new Size(125, 27);
+            textBox22.Size = new Size(110, 23);
             textBox22.TabIndex = 33;
             // 
             // label25
             // 
             label25.AutoSize = true;
-            label25.Location = new Point(259, 16);
+            label25.Location = new Point(227, 12);
             label25.Name = "label25";
-            label25.Size = new Size(74, 20);
+            label25.Size = new Size(59, 15);
             label25.TabIndex = 32;
             label25.Text = "vehicle_id";
             // 
@@ -998,9 +1087,10 @@
             pizza.Controls.Add(label27);
             pizza.Controls.Add(textBox25);
             pizza.Controls.Add(label28);
-            pizza.Location = new Point(4, 29);
+            pizza.Location = new Point(4, 24);
+            pizza.Margin = new Padding(3, 2, 3, 2);
             pizza.Name = "pizza";
-            pizza.Size = new Size(985, 444);
+            pizza.Size = new Size(861, 330);
             pizza.TabIndex = 6;
             pizza.Text = "pizza";
             pizza.UseVisualStyleBackColor = true;
@@ -1008,19 +1098,21 @@
             // dataGridView6
             // 
             dataGridView6.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView6.Location = new Point(63, 157);
+            dataGridView6.Location = new Point(55, 118);
+            dataGridView6.Margin = new Padding(3, 2, 3, 2);
             dataGridView6.Name = "dataGridView6";
             dataGridView6.RowHeadersWidth = 51;
-            dataGridView6.Size = new Size(858, 272);
+            dataGridView6.Size = new Size(751, 204);
             dataGridView6.TabIndex = 42;
             // 
             // button21
             // 
             button21.BackColor = Color.DodgerBlue;
             button21.ForeColor = Color.White;
-            button21.Location = new Point(511, 90);
+            button21.Location = new Point(447, 68);
+            button21.Margin = new Padding(3, 2, 3, 2);
             button21.Name = "button21";
-            button21.Size = new Size(140, 42);
+            button21.Size = new Size(122, 32);
             button21.TabIndex = 41;
             button21.Text = "Clear";
             button21.UseVisualStyleBackColor = false;
@@ -1029,9 +1121,10 @@
             // 
             button22.BackColor = Color.FromArgb(0, 192, 0);
             button22.ForeColor = Color.White;
-            button22.Location = new Point(319, 90);
+            button22.Location = new Point(279, 68);
+            button22.Margin = new Padding(3, 2, 3, 2);
             button22.Name = "button22";
-            button22.Size = new Size(140, 42);
+            button22.Size = new Size(122, 32);
             button22.TabIndex = 40;
             button22.Text = "Update";
             button22.UseVisualStyleBackColor = false;
@@ -1040,9 +1133,10 @@
             // 
             button23.BackColor = Color.FromArgb(0, 192, 0);
             button23.ForeColor = Color.White;
-            button23.Location = new Point(128, 90);
+            button23.Location = new Point(112, 68);
+            button23.Margin = new Padding(3, 2, 3, 2);
             button23.Name = "button23";
-            button23.Size = new Size(140, 42);
+            button23.Size = new Size(122, 32);
             button23.TabIndex = 39;
             button23.Text = "Insert";
             button23.UseVisualStyleBackColor = false;
@@ -1051,58 +1145,62 @@
             // 
             button24.BackColor = Color.FromArgb(192, 0, 0);
             button24.ForeColor = Color.White;
-            button24.Location = new Point(711, 90);
+            button24.Location = new Point(622, 68);
+            button24.Margin = new Padding(3, 2, 3, 2);
             button24.Name = "button24";
-            button24.Size = new Size(140, 42);
+            button24.Size = new Size(122, 32);
             button24.TabIndex = 38;
             button24.Text = "Delete";
             button24.UseVisualStyleBackColor = false;
             // 
             // textBox23
             // 
-            textBox23.Location = new Point(585, 39);
+            textBox23.Location = new Point(512, 29);
+            textBox23.Margin = new Padding(3, 2, 3, 2);
             textBox23.Name = "textBox23";
-            textBox23.Size = new Size(125, 27);
+            textBox23.Size = new Size(110, 23);
             textBox23.TabIndex = 37;
             // 
             // label26
             // 
             label26.AutoSize = true;
-            label26.Location = new Point(585, 16);
+            label26.Location = new Point(512, 12);
             label26.Name = "label26";
-            label26.Size = new Size(83, 20);
+            label26.Size = new Size(64, 15);
             label26.TabIndex = 36;
             label26.Text = "price_pizza";
             // 
             // textBox24
             // 
-            textBox24.Location = new Point(422, 39);
+            textBox24.Location = new Point(369, 29);
+            textBox24.Margin = new Padding(3, 2, 3, 2);
             textBox24.Name = "textBox24";
-            textBox24.Size = new Size(125, 27);
+            textBox24.Size = new Size(110, 23);
             textBox24.TabIndex = 35;
             // 
             // label27
             // 
             label27.AutoSize = true;
-            label27.Location = new Point(422, 16);
+            label27.Location = new Point(369, 12);
             label27.Name = "label27";
-            label27.Size = new Size(38, 20);
+            label27.Size = new Size(30, 15);
             label27.TabIndex = 34;
             label27.Text = "type";
             // 
             // textBox25
             // 
-            textBox25.Location = new Point(259, 39);
+            textBox25.Location = new Point(227, 29);
+            textBox25.Margin = new Padding(3, 2, 3, 2);
             textBox25.Name = "textBox25";
-            textBox25.Size = new Size(125, 27);
+            textBox25.Size = new Size(110, 23);
             textBox25.TabIndex = 33;
             // 
             // label28
             // 
             label28.AutoSize = true;
-            label28.Location = new Point(259, 16);
+            label28.Location = new Point(227, 12);
             label28.Name = "label28";
-            label28.Size = new Size(63, 20);
+            label28.Size = new Size(48, 15);
             label28.TabIndex = 32;
             label28.Text = "pizza_id";
             // 
@@ -1119,9 +1217,10 @@
             non_pizza.Controls.Add(label30);
             non_pizza.Controls.Add(textBox28);
             non_pizza.Controls.Add(label31);
-            non_pizza.Location = new Point(4, 29);
+            non_pizza.Location = new Point(4, 24);
+            non_pizza.Margin = new Padding(3, 2, 3, 2);
             non_pizza.Name = "non_pizza";
-            non_pizza.Size = new Size(985, 444);
+            non_pizza.Size = new Size(861, 330);
             non_pizza.TabIndex = 7;
             non_pizza.Text = "non_pizza";
             non_pizza.UseVisualStyleBackColor = true;
@@ -1129,19 +1228,21 @@
             // dataGridView7
             // 
             dataGridView7.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView7.Location = new Point(63, 157);
+            dataGridView7.Location = new Point(55, 118);
+            dataGridView7.Margin = new Padding(3, 2, 3, 2);
             dataGridView7.Name = "dataGridView7";
             dataGridView7.RowHeadersWidth = 51;
-            dataGridView7.Size = new Size(858, 272);
+            dataGridView7.Size = new Size(751, 204);
             dataGridView7.TabIndex = 53;
             // 
             // button25
             // 
             button25.BackColor = Color.DodgerBlue;
             button25.ForeColor = Color.White;
-            button25.Location = new Point(511, 90);
+            button25.Location = new Point(447, 68);
+            button25.Margin = new Padding(3, 2, 3, 2);
             button25.Name = "button25";
-            button25.Size = new Size(140, 42);
+            button25.Size = new Size(122, 32);
             button25.TabIndex = 52;
             button25.Text = "Clear";
             button25.UseVisualStyleBackColor = false;
@@ -1150,9 +1251,10 @@
             // 
             button26.BackColor = Color.FromArgb(0, 192, 0);
             button26.ForeColor = Color.White;
-            button26.Location = new Point(319, 90);
+            button26.Location = new Point(279, 68);
+            button26.Margin = new Padding(3, 2, 3, 2);
             button26.Name = "button26";
-            button26.Size = new Size(140, 42);
+            button26.Size = new Size(122, 32);
             button26.TabIndex = 51;
             button26.Text = "Update";
             button26.UseVisualStyleBackColor = false;
@@ -1161,9 +1263,10 @@
             // 
             button27.BackColor = Color.FromArgb(0, 192, 0);
             button27.ForeColor = Color.White;
-            button27.Location = new Point(128, 90);
+            button27.Location = new Point(112, 68);
+            button27.Margin = new Padding(3, 2, 3, 2);
             button27.Name = "button27";
-            button27.Size = new Size(140, 42);
+            button27.Size = new Size(122, 32);
             button27.TabIndex = 50;
             button27.Text = "Insert";
             button27.UseVisualStyleBackColor = false;
@@ -1172,101 +1275,74 @@
             // 
             button28.BackColor = Color.FromArgb(192, 0, 0);
             button28.ForeColor = Color.White;
-            button28.Location = new Point(711, 90);
+            button28.Location = new Point(622, 68);
+            button28.Margin = new Padding(3, 2, 3, 2);
             button28.Name = "button28";
-            button28.Size = new Size(140, 42);
+            button28.Size = new Size(122, 32);
             button28.TabIndex = 49;
             button28.Text = "Delete";
             button28.UseVisualStyleBackColor = false;
             // 
             // textBox26
             // 
-            textBox26.Location = new Point(585, 39);
+            textBox26.Location = new Point(512, 29);
+            textBox26.Margin = new Padding(3, 2, 3, 2);
             textBox26.Name = "textBox26";
-            textBox26.Size = new Size(125, 27);
+            textBox26.Size = new Size(110, 23);
             textBox26.TabIndex = 48;
             // 
             // label29
             // 
             label29.AutoSize = true;
-            label29.Location = new Point(585, 16);
+            label29.Location = new Point(512, 12);
             label29.Name = "label29";
-            label29.Size = new Size(85, 20);
+            label29.Size = new Size(69, 15);
             label29.TabIndex = 47;
             label29.Text = "price_menu";
             // 
             // textBox27
             // 
-            textBox27.Location = new Point(422, 39);
+            textBox27.Location = new Point(369, 29);
+            textBox27.Margin = new Padding(3, 2, 3, 2);
             textBox27.Name = "textBox27";
-            textBox27.Size = new Size(125, 27);
+            textBox27.Size = new Size(110, 23);
             textBox27.TabIndex = 46;
             // 
             // label30
             // 
             label30.AutoSize = true;
-            label30.Location = new Point(422, 16);
+            label30.Location = new Point(369, 12);
             label30.Name = "label30";
-            label30.Size = new Size(46, 20);
+            label30.Size = new Size(38, 15);
             label30.TabIndex = 45;
             label30.Text = "menu";
             // 
             // textBox28
             // 
-            textBox28.Location = new Point(259, 39);
+            textBox28.Location = new Point(227, 29);
+            textBox28.Margin = new Padding(3, 2, 3, 2);
             textBox28.Name = "textBox28";
-            textBox28.Size = new Size(125, 27);
+            textBox28.Size = new Size(110, 23);
             textBox28.TabIndex = 44;
             // 
             // label31
             // 
             label31.AutoSize = true;
-            label31.Location = new Point(259, 16);
+            label31.Location = new Point(227, 12);
             label31.Name = "label31";
-            label31.Size = new Size(53, 20);
+            label31.Size = new Size(43, 15);
             label31.TabIndex = 43;
             label31.Text = "non_id";
             // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Location = new Point(40, 95);
-            label32.Name = "label32";
-            label32.Size = new Size(92, 20);
-            label32.TabIndex = 20;
-            label32.Text = "non pizza_id";
-            // 
-            // textBox29
-            // 
-            textBox29.Location = new Point(202, 118);
-            textBox29.Name = "textBox29";
-            textBox29.Size = new Size(125, 27);
-            textBox29.TabIndex = 19;
-            // 
-            // textBox30
-            // 
-            textBox30.Location = new Point(39, 118);
-            textBox30.Name = "textBox30";
-            textBox30.Size = new Size(125, 27);
-            textBox30.TabIndex = 18;
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.Location = new Point(840, 17);
-            label33.Name = "label33";
-            label33.Size = new Size(63, 20);
-            label33.TabIndex = 17;
-            label33.Text = "pizza_id";
-            // 
             // management_admin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1224, 531);
+            ClientSize = new Size(1071, 398);
             Controls.Add(tabControl1);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "management_admin";
             Text = "admin management";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

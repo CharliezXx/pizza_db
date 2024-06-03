@@ -6,13 +6,15 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <SignAssembly>False</SignAssembly>
+    <SignAssembly>True</SignAssembly>
     <ApplicationIcon>pizza_food_fast_food_italian_food_icon_207990.ico</ApplicationIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>pizza</Title>
     <Description>pizza</Description>
     <Copyright>pizza</Copyright>
     <StartupObject>pizza_db.Program</StartupObject>
+    <DelaySign>False</DelaySign>
+    <IncludeSymbols>False</IncludeSymbols>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

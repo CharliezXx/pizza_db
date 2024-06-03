@@ -53,7 +53,9 @@
             // Login_text
             // 
             Login_text.AutoSize = true;
+            Login_text.BackColor = Color.DarkCyan;
             Login_text.Font = new Font("Sitka Text", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Login_text.ForeColor = Color.Yellow;
             Login_text.Location = new Point(201, 37);
             Login_text.Name = "Login_text";
             Login_text.Size = new Size(120, 47);
@@ -73,9 +75,10 @@
             // username_label
             // 
             username_label.AutoSize = true;
+            username_label.ForeColor = Color.Yellow;
             username_label.Location = new Point(82, 93);
             username_label.Name = "username_label";
-            username_label.Size = new Size(60, 15);
+            username_label.Size = new Size(64, 15);
             username_label.TabIndex = 3;
             username_label.Text = "Username";
             // 
@@ -90,18 +93,21 @@
             // password_label
             // 
             password_label.AutoSize = true;
+            password_label.ForeColor = Color.Yellow;
             password_label.Location = new Point(82, 147);
             password_label.Name = "password_label";
-            password_label.Size = new Size(57, 15);
+            password_label.Size = new Size(59, 15);
             password_label.TabIndex = 5;
             password_label.Text = "Password";
             // 
             // register_linklabel
             // 
             register_linklabel.AutoSize = true;
+            register_linklabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            register_linklabel.LinkColor = Color.White;
             register_linklabel.Location = new Point(222, 199);
             register_linklabel.Name = "register_linklabel";
-            register_linklabel.Size = new Size(47, 15);
+            register_linklabel.Size = new Size(48, 15);
             register_linklabel.TabIndex = 3;
             register_linklabel.TabStop = true;
             register_linklabel.Text = "Sign up";
@@ -110,19 +116,21 @@
             // text1
             // 
             text1.AutoSize = true;
+            text1.ForeColor = Color.Yellow;
             text1.Location = new Point(82, 199);
             text1.Name = "text1";
-            text1.Size = new Size(134, 15);
+            text1.Size = new Size(139, 15);
             text1.TabIndex = 7;
             text1.Text = "Don't have an account ?";
             // 
             // checkBox_showpass_login
             // 
             checkBox_showpass_login.AutoSize = true;
+            checkBox_showpass_login.ForeColor = Color.Yellow;
             checkBox_showpass_login.Location = new Point(332, 199);
             checkBox_showpass_login.Name = "checkBox_showpass_login";
             checkBox_showpass_login.RightToLeft = RightToLeft.Yes;
-            checkBox_showpass_login.Size = new Size(108, 19);
+            checkBox_showpass_login.Size = new Size(112, 19);
             checkBox_showpass_login.TabIndex = 4;
             checkBox_showpass_login.Text = "Show password";
             checkBox_showpass_login.UseVisualStyleBackColor = true;
@@ -134,7 +142,7 @@
             error_first_page.ForeColor = Color.Red;
             error_first_page.Location = new Point(82, 224);
             error_first_page.Name = "error_first_page";
-            error_first_page.Size = new Size(165, 15);
+            error_first_page.Size = new Size(173, 15);
             error_first_page.TabIndex = 9;
             error_first_page.Text = "Wrong username or password";
             error_first_page.Visible = false;
@@ -145,7 +153,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            BackColor = Color.BlanchedAlmond;
+            BackColor = Color.DarkCyan;
             ClientSize = new Size(524, 361);
             Controls.Add(error_first_page);
             Controls.Add(checkBox_showpass_login);
@@ -157,6 +165,7 @@
             Controls.Add(textBox_name_firstpage);
             Controls.Add(Login_text);
             Controls.Add(login_button);
+            Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             MaximizeBox = false;
             Name = "first_page";
             SizeGripStyle = SizeGripStyle.Hide;
